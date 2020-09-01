@@ -8,7 +8,7 @@ Documentation and weekly submission for PGDV 5200 Data Visualization Major Studi
 
 | Week          | Summary of Changes|   
 | ------------- |:-----------------:| 
-| Week 1        | Summary:          | 
+| Week 1        | Summary: Activate Github Pages, Sign up for Colab, Readings, Museum choice, etc.| 
 | Week 2        | Summary:          |   
 | Week 3        | Summary:          |  
 | Week 4        | Summary:          | 
