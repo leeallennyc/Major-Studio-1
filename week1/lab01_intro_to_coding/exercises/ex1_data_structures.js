@@ -102,6 +102,6 @@ function addAMuseumObj(museums, newName, newURL, newYear){
   return museums;
 }
 
-addAMuseumObj(/* COMPLETE ME */);
+addAMuseumObj(museums2);
 
 console.log('museums2', museums2);
