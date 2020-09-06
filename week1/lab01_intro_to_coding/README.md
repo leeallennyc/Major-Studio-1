@@ -21,3 +21,11 @@ Open the `exercises` directory and work through the exercises with a partner.
 ##### Saving your work
 
 Before this class, you should have already created a Github repo for Major Studio 1. Save and commit your local work, then add a remote for the local repo with `git remote add origin https://github.com/user/repo.git`, substituting in your `user` and `repo` in the URL.
+
+---
+#### Homework Documentation:
+ 
+![alt text](https://github.com/leeallennyc/Major-Studio-1/blob/master/week1/lab01_intro_to_coding/images/Iris_onClick.png "Iris On click Image")
+![alt text](https://github.com/leeallennyc/Major-Studio-1/blob/master/week1/lab01_intro_to_coding/images/Iris_Species_Data.png "Iris in HTML")
+![alt text](https://github.com/leeallennyc/Major-Studio-1/blob/master/week1/lab01_intro_to_coding/images/Iris_Species2.png "Console.Table Data")
+
