@@ -75,33 +75,36 @@ for (var i = 0; i < names.length; i++) {
 console.log('museums', museums)
 
 var museums2 = {};
-names.forEach(function(n, i) {
-  museums2[n] = {};
+names.forEach(function(item, index) {
+  museums2[item] = {};
 
-  var currentURL = URLs[i];
-  var currentYear = years[i];
+  var currentURL = URLs[index];
+  var currentYear = years[index];
 
-  museums2[n].URL = currentURL;
-  museums2[n]["year"] = currentYear;
+  museums2[item].URL = currentURL;
+  museums2[item]["year"] = currentYear;
 });
 
 console.log('museums2', museums2)
 
 // Task
 // Write a function to add a new museum object, with properties URL and year, to an existing museums object. Call it on museums2
-function addAMuseumObj(museums, newName, newURL, newYear){
+function addAMuseumObj(museums, newMuseumName, newURL, newYear){
 
   /* COMPLETE ME */
   //1. Add a new museum object (called addAMuseumObj) to an existing museums object
   //2. With Properties URL and year
   //3. Add the new museum object to museums2
 
-  var newMuseumObj = [];
-  newMuseumObj.push({URL: "some url here", "Year": "some year here"})
+  museums[newMuseumName] = {}
+  museums[newMuseumName].URL = newURL;
+  museums[newMuseumName].year = newYear;
 
   return museums;
 }
 
-addAMuseumObj(museums2);
+addAMuseumObj(museums2, "New Museum", "newmuseum.org", 1977);
 
 console.log('museums2', museums2);
+
+
