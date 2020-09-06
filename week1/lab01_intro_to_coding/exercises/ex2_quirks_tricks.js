@@ -23,12 +23,14 @@ if (1 === true) {
 }
 
 var test3 = test1 === test2;
+// This returns false
+console.log(test3);
 
 // Task
 // Change this code so test4 is false and test5 is true. Use console.log() to confirm your cod works.
 
-var test4 = 0 == "";
-var test5 = 1 === "1";
+var test4 = 0 == "false";
+var test5 = 1 === 1;
 
 console.log("test4 is", test4, "and test 5 is", test5);
 
@@ -39,8 +41,19 @@ var x = 0.2;
 var y = 0.4;
 var z = 0.5;
 
+// Here we have p = 0.1 + 0.2
 var p = w + x;
 
+// Here we have q = 0.5 - 0.2
 var q = z - x;
 
+// Here we have r = 0.4 - 0.1
 var r = y - w;
+
+// Should return p = 0.3, q = 0.3, r = 0.3
+// But JS return a float on p and r
+// Answer to this has to do with JS's conversion of Number values to Strings
+// https://stackoverflow.com/questions/50778431/why-does-0-1-0-2-return-unpredictable-float-results-in-javascript-while-0-2
+console.log(p);
+console.log(q);
+console.log(r);
