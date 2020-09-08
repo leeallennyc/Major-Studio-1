@@ -28,7 +28,7 @@ var years = [
   1930,
   1935,
   1869
-];
+]; 
 
 // Task 1
 // Console log the length of each Array
