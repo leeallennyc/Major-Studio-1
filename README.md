@@ -6,8 +6,8 @@
 Documentation and weekly submission for PGDV 5200 Data Visualization Major Studio 1
 ---
 
-| Week          | Summary of Changes|   
-| ------------- |:-----------------:| 
+| Week          |:Summary of Changes:|   
+| ------------- |:-----------------| 
 | Week 1        | Summary: Activate Github Repo, AWS Cloud 9, Sign up for Colab, Readings, Museum choice, Week1 Lab| 
 | Week 2        | Summary: Sketches for Met Museum, Readings, Visualization Method, Week2 Lab|   
 | Week 3        | Summary: P5 Code and Sketches for Met Museum|  
