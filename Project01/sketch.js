@@ -9,7 +9,7 @@ function preload() {
 const Y_AXIS = 1;
 const X_AXIS = 2;
 let w = 200;
-let h = 1500;
+let h = 300;
 let offset = 10;
 let c1a, c1b, c1c, c2a, c2b, c3, c4a, c4b, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16;
 
@@ -17,28 +17,28 @@ function setup() {
     createCanvas(5000, 2000);
     background("floralwhite");
 
-  // Define Martin-Schultz eye color scale
+// Define Martin-Schultz eye color scale
 
-    c1a = color("#617fa3"), // Light blue
-    c1b = color("#5b8598"), // Light blue 2
-    c1c = color("#567f99"), // Medium blue
-    c2a = color("#507e8d"), // Darker blue
-    c2b = color("#47697d"), // Darker blue 2
-    c3 = color("#586165"), // Blue-Gray
-    c4a = color("#727374"), // Gray
-    c4b = color("#5c6761"), // Gray 
-    c5= color("#59676a"), // Gray-Blue with Brown spots
-    c6 = color("#5f6a5f"), // Gray-Green with Brown spots
-    c7 = color("#646349"), // Green
-    c8 = color("#5f5a46"), // Green with Brown spots
-    c9 = color("#655b3d"), // Light Brown/ Hazel1
-    c10 = color("#5f5739"), // Light Brown/ Hazel2
-    c11 = color("#585035"), // Light Brown/ Hazel3
-    c12 = color("#504630"), // Medium Brown1
-    c13= color("#4d472e"), // Medium Brown2
-    c14 = color("#413827"), // Dark Brown1
-    c15 = color("#272521"), // Dark Brown2
-    c16 = color("#0d0c05") // Dark Brown/Black
+c1a = color("#617fa3"), // Light blue
+c1b = color("#5b8598"), // Light blue 2
+c1c = color("#567f99"), // Medium blue
+c2a = color("#507e8d"), // Darker blue
+c2b = color("#47697d"), // Darker blue 2
+c3 = color("#586165"), // Blue-Gray
+c4a = color("#727374"), // Gray
+c4b = color("#5c6761"), // Gray 
+c5= color("#59676a"), // Gray-Blue with Brown spots
+c6 = color("#5f6a5f"), // Gray-Green with Brown spots
+c7 = color("#646349"), // Green
+c8 = color("#5f5a46"), // Green with Brown spots
+c9 = color("#655b3d"), // Light Brown/ Hazel1
+c10 = color("#5f5739"), // Light Brown/ Hazel2
+c11 = color("#585035"), // Light Brown/ Hazel3
+c12 = color("#504630"), // Medium Brown1
+c13= color("#4d472e"), // Medium Brown2
+c14 = color("#413827"), // Dark Brown1
+c15 = color("#272521"), // Dark Brown2
+c16 = color("#0d0c05") // Dark Brown/Black
 
     noLoop();
 }
@@ -94,30 +94,30 @@ function setGradient(x, y, w, h, c1a, c1b, axis) {
         let grad18 = lerpColor(c14, c15, inter);
         let grad19 = lerpColor(c15, c16, inter);  
 
-    stroke(
-        grad1,
-        grad2, 
-        grad3, 
-        grad4, 
-        grad5,        
-        grad6,
-        grad7,
-        grad8,
-        grad9,
-        grad10,
-        grad11, 
-        grad12, 
-        grad13, 
-        grad14, 
-        grad15,
-        grad16,
-        grad17, 
-        grad18,
-        grad19
-        );
-    line(i, y, i, y + h);
+        stroke(
+            grad1,
+            grad2, 
+            grad3, 
+            grad4, 
+            grad5,        
+            grad6,
+            grad7,
+            grad8,
+            grad9,
+            grad10,
+            grad11, 
+            grad12, 
+            grad13, 
+            grad14, 
+            grad15,
+            grad16,
+            grad17, 
+            grad18,
+            grad19
+            );
+        line(i, y, i, y + h);
+        }
     }
-}
 }
 
 
