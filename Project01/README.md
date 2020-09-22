@@ -5,18 +5,18 @@
 
 ---
 ### Summary:
----
 For this quantitative visualization project we are looking at the [Smithsonian's archive](https://www.si.edu/openaccess) and [API](http://edan.si.edu/openaccess/apidocs/) through [Open Access Collections](https://collections.si.edu/search/).
 
 * The purpose of the project is to quantitatively represent data using information from the Smithsonian.
 ---
-I've chosen a specific object from the Smithsonian's National Museum of American History called a [Color Guide](https://www.si.edu/object/color-guide-artificial-eye-prosthesis:nmah_1119630), which was used a tool for matching the color of the eye when making prothetic eyes. 
+I've chosen a specific object from the Smithsonian's National Museum of American History called a [Color Guide](https://www.si.edu/object/color-guide-artificial-eye-prosthesis:nmah_1119630), which was used a tool for matching the color of the eye when making prosthetic eyes. 
 
-My first goal was to create a custom JSON file to represent this object digitally. I created a nested JSON file and used a color picker in photoshop to extract all the meaningful data from the colors used to create each pupil:
+My first goal was to create a custom JSON file to represent this object digitally. I created a nested JSON file and used a color picker in Photoshop to extract all the meaningful data from the colors used to re-create each pupil:
 
 A sample of the metadata in the JSON file:
----
-` "pupils": [
+
+```
+"pupils": [
             {
                 "id": "pupil 01",
                 "outerRadius": "#2d363f", 
@@ -39,17 +39,18 @@ A sample of the metadata in the JSON file:
                 "color3": "#60635e",
                 "color4": "#433f36", 
                 "innerRadius": "#4f504c"
-            }`
----
+            }
+```
 
-My goal is to better understand the numeric representation of these colored eyes as it relates to a standard tool in Physcial Anthropology called the (Martin-Schultz scale)[https://en.wikipedia.org/wiki/Martin%E2%80%93Schultz_scale]. We will be looking at the quantitative color measurements for each pupil color and where on the spectrum the pupil colors collectively fall in relation to eye color in world population. 
+My goal is to better understand the numeric representation of these colored eyes as it relates to a standard tool in Physcial Anthropology called the [MartinSchultz scale](https://en.wikipedia.org/wiki/Martin%E2%80%93Schultz_scale). We will be looking at the quantitative color measurements for each pupil color and where on the spectrum the pupil colors collectively fall in relation to eye color in world population. 
 
-The original idea was to us a histogram to read the color measurments, but I've since adapted that to use a radial chart or each pupil. 
+* The original idea was to use a histogram to read the color measurments, but I've since adapted that to use a radial chart for each pupil. 
 ---
-### Code:
+## Code:
+
 Initial early sketch using P5.js.
 
-`
+```
 var data;
 
 function preload() {
@@ -69,28 +70,28 @@ function setup() {
     createCanvas(5000, 2000);
     background("floralwhite");
 
-  // Define Martin-Schultz eye color scale
+// Define Martin-Schultz eye color scale
 
-    c1a = color("#617fa3"), // Light blue
-    c1b = color("#5b8598"), // Light blue 2
-    c1c = color("#567f99"), // Medium blue
-    c2a = color("#507e8d"), // Darker blue
-    c2b = color("#47697d"), // Darker blue 2
-    c3 = color("#586165"), // Blue-Gray
-    c4a = color("#727374"), // Gray
-    c4b = color("#5c6761"), // Gray 
-    c5= color("#59676a"), // Gray-Blue with Brown spots
-    c6 = color("#5f6a5f"), // Gray-Green with Brown spots
-    c7 = color("#646349"), // Green
-    c8 = color("#5f5a46"), // Green with Brown spots
-    c9 = color("#655b3d"), // Light Brown/ Hazel1
-    c10 = color("#5f5739"), // Light Brown/ Hazel2
-    c11 = color("#585035"), // Light Brown/ Hazel3
-    c12 = color("#504630"), // Medium Brown1
-    c13= color("#4d472e"), // Medium Brown2
-    c14 = color("#413827"), // Dark Brown1
-    c15 = color("#272521"), // Dark Brown2
-    c16 = color("#0d0c05") // Dark Brown/Black
+c1a = color("#617fa3"), // Light blue
+c1b = color("#5b8598"), // Light blue 2
+c1c = color("#567f99"), // Medium blue
+c2a = color("#507e8d"), // Darker blue
+c2b = color("#47697d"), // Darker blue 2
+c3 = color("#586165"), // Blue-Gray
+c4a = color("#727374"), // Gray
+c4b = color("#5c6761"), // Gray 
+c5= color("#59676a"), // Gray-Blue with Brown spots
+c6 = color("#5f6a5f"), // Gray-Green with Brown spots
+c7 = color("#646349"), // Green
+c8 = color("#5f5a46"), // Green with Brown spots
+c9 = color("#655b3d"), // Light Brown/ Hazel1
+c10 = color("#5f5739"), // Light Brown/ Hazel2
+c11 = color("#585035"), // Light Brown/ Hazel3
+c12 = color("#504630"), // Medium Brown1
+c13= color("#4d472e"), // Medium Brown2
+c14 = color("#413827"), // Dark Brown1
+c15 = color("#272521"), // Dark Brown2
+c16 = color("#0d0c05") // Dark Brown/Black
 
     noLoop();
 }
@@ -146,31 +147,36 @@ function setGradient(x, y, w, h, c1a, c1b, axis) {
         let grad18 = lerpColor(c14, c15, inter);
         let grad19 = lerpColor(c15, c16, inter);  
 
-    stroke(
-        grad1,
-        grad2, 
-        grad3, 
-        grad4, 
-        grad5,        
-        grad6,
-        grad7,
-        grad8,
-        grad9,
-        grad10,
-        grad11, 
-        grad12, 
-        grad13, 
-        grad14, 
-        grad15,
-        grad16,
-        grad17, 
-        grad18,
-        grad19
-        );
-    line(i, y, i, y + h);
+        stroke(
+            grad1,
+            grad2, 
+            grad3, 
+            grad4, 
+            grad5,        
+            grad6,
+            grad7,
+            grad8,
+            grad9,
+            grad10,
+            grad11, 
+            grad12, 
+            grad13, 
+            grad14, 
+            grad15,
+            grad16,
+            grad17, 
+            grad18,
+            grad19
+            );
+        line(i, y, i, y + h);
+        }
     }
 }
-}
-`
+```
+## Image sketch is here:
+
+![alt text](https://github.com/leeallennyc/Major-Studio-1/blob/master/Project01/sketches/ArtificialEye_Sketch.png "Artificial Eye")
+
+
 
 
