@@ -9,11 +9,11 @@ For this quantitative visualization project we are looking at the [Smithsonian's
 
 * The purpose of the project is to quantitatively represent data using information from the Smithsonian.
 ---
-I've chosen a specific object from the Smithsonian's National Museum of American History called a [Color Guide](https://www.si.edu/object/color-guide-artificial-eye-prosthesis:nmah_1119630), which was used a tool for matching the color of the eye when making prothetic eyes. 
+I've chosen a specific object from the Smithsonian's National Museum of American History called a [Color Guide](https://www.si.edu/object/color-guide-artificial-eye-prosthesis:nmah_1119630), which was used a tool for matching the color of the eye when making prosthetic eyes. 
 
-My first goal was to create a custom JSON file to represent this object digitally. I created a nested JSON file and used a color picker in photoshop to extract all the meaningful data from the colors used to create each pupil:
+My first goal was to create a custom JSON file to represent this object digitally. I created a nested JSON file and used a color picker in Photoshop to extract all the meaningful data from the colors used to re-create each pupil:
 
-A sample of the metadata in the JSON file-
+A sample of the metadata in the JSON file:
 
 ```
 "pupils": [
@@ -42,9 +42,9 @@ A sample of the metadata in the JSON file-
             }
 ```
 
-My goal is to better understand the numeric representation of these colored eyes as it relates to a standard tool in Physcial Anthropology called the (MartinSchultz scale)[https://en.wikipedia.org/wiki/Martin%E2%80%93Schultz_scale]. We will be looking at the quantitative color measurements for each pupil color and where on the spectrum the pupil colors collectively fall in relation to eye color in world population. 
+My goal is to better understand the numeric representation of these colored eyes as it relates to a standard tool in Physcial Anthropology called the [MartinSchultz scale](https://en.wikipedia.org/wiki/Martin%E2%80%93Schultz_scale). We will be looking at the quantitative color measurements for each pupil color and where on the spectrum the pupil colors collectively fall in relation to eye color in world population. 
 
-* The original idea was to use a histogram to read the color measurments, but I've since adapted that to use a radial chart or each pupil. 
+* The original idea was to use a histogram to read the color measurments, but I've since adapted that to use a radial chart for each pupil. 
 ---
 ## Code:
 
