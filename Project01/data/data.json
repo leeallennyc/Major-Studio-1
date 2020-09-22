@@ -1,0 +1,217 @@
+[
+    {
+        "record_id": "NMAH-AHB2014q095674",
+        "idNumber": "1991.0417.10",
+        "objectName": "Color guide for Artifical Eye",
+        "Museum": "National Museum of American History",
+        "dateMade": "1943",
+        "maker":[
+            {
+                "person1": "Victor H. Dietz", 
+                "person2": "Milton S. Wirtz", 
+                "person3": "Stanley F. Erph"
+            }
+        ],
+        "locationMade":[
+            {
+                "name": "Camp Crowder",
+                "alsoKnownAs": "Fort Crowder",
+                "namedAfter": "Enoch Herbert Crowder",
+                "enochCrowderLink": "https://en.wikipedia.org/wiki/Enoch_Crowder/", 
+                "town": "Neosho",
+                "county": "Newton County",
+                "state": "Missouri",
+                "country": "United States",
+                "latitude": 36.818333,
+                "longitude": -94.369444,
+                "websiteLink": "https://armyhistory.org/camp-enoch-h-crowder-missouri/"
+            }
+        ],
+        "dimensionsInches": "2 1/8 in x 8 in x 5 in",
+        "dimensionsMM": "53.975 mm x 203.20 cm x 127.00 mm",
+        "pupils": [
+            {
+                "id": "pupil 01",
+                "outerRadius": "#2d363f", 
+                "color2": "#686e67", 
+                "color3": "#afaa75",
+                "color4": "#676150", 
+                "innerRadius": "#5c5f55"
+            },
+            { 
+                "id": "pupil 02",
+                "outerRadius": "#7d703b", 
+                "color2": "#5d5f57", 
+                "color3": "#373739",
+                "innerRadius": "#2c3137"
+            },
+            {
+                "id": "pupil 03",
+                "outerRadius": "#63614b",
+                "color2": "#3f464b", 
+                "color3": "#60635e",
+                "color4": "#433f36", 
+                "innerRadius": "#4f504c"
+            },
+            {
+                "id": "pupil 04",
+                "outerRadius": "#575535",
+                "color2": "#343530", 
+                "color3": "#37444c",
+                "innerRadius": "#2b2d2c"
+            },
+            { 
+                "id": "pupil 05",
+                "outerRadius": "#2d3037",
+                "color2": "#515642", 
+                "innerRadius": "#4b3528"
+            },
+            {
+                "id": "pupil 06",
+                "outerRadius": "#535652",
+                "color2": "#5a595f", 
+                "color3": "#493c33",
+                "color4": "#4f4849", 
+                "innerRadius": "#3a3a3c"
+            },
+            { 
+                "id": "pupil 07",
+                "outerRadius": "#444845",
+                "color2": "#4a4d52", 
+                "color3": "#63655f",
+                "innerRadius": "#606467"
+            },
+            {
+                "id": "pupil 08",
+                "outerRadius": "#373733",
+                "color2": "#575046", 
+                "color3": "#565054",
+                "color4": "#3a3d3f", 
+                "innerRadius": "#686a68"
+            },
+            { 
+                "id": "pupil 09",
+                "outerRadius": "#383a35",
+                "color2": "#474135", 
+                "color3": "#5e6764",
+                "innerRadius": "#474f43"
+            },
+            {
+                "id": "pupil 10",
+                "outerRadius": "#31332f",
+                "color2": "#827850", 
+                "color3": "#585546",
+                "color4": "#6a4e2a", 
+                "innerRadius": "#484637"
+            },
+            { 
+                "id": "pupil 11",
+                "outerRadius": "#464649",
+                "color2": "#5d5338", 
+                "color3": "#3d423e",
+                "color4": "#77633b", 
+                "innerRadius": "#2a2c2b"
+            },
+            {
+                "id": "pupil 12",
+                "outerRadius": "#2b2b2d",
+                "color2": "#333936", 
+                "color3": "#613e25",
+                "color4": "#877349",
+                "color5": "#77623c", 
+                "innerRadius": "#464a3d"
+            },
+            { 
+                "id": "pupil 13",
+                "outerRadius": "#262a2d",
+                "color2": "#60542b", 
+                "color3": "#333539",
+                "innerRadius": "#474c4c"
+            },
+            {
+                "id": "pupil 14",
+                "outerRadius": "#2b2d26",
+                "color2": "#6f5a2c", 
+                "color3": "#4b5241",
+                "color4": "#333539",
+                "innerRadius": "#3e3f3a"
+            },
+            { 
+                "id": "pupil 15",
+                "outerRadius": "#575958",
+                "color2": "#57402b", 
+                "color3": "#282a2c",
+                "innerRadius": "#2f3938"
+            },
+            {
+                "id": "pupil 16",
+                "outerRadius": "#2a2a2b",
+                "color2": "#897f4a", 
+                "color3": "#524c40",
+                "innerRadius": "#373934"
+            },
+            { 
+                "id": "pupil 17",
+                "outerRadius": "#616057",
+                "color2": "#3a3c37", 
+                "innerRadius": "#474642"
+            },
+            {
+                "id": "pupil 18",
+                "outerRadius": "#886928",
+                "color2": "#717a57", 
+                "color3": "#5b553a",
+                "innerRadius": "#484d49"
+            },
+            { 
+                "id": "pupil 19",
+                "outerRadius": "#5e5e48",
+                "color2": "#3a2b28", 
+                "color3": "#3f4347",
+                "color4": "#6d4c1d",
+                "color5": "#3a3d36",
+                "innerRadius": "#2d2f2e"
+            },
+            {
+                "id": "pupil 20",
+                "outerRadius": "#4f4f4e",
+                "color2": "#493326", 
+                "color3": "#606762",
+                "innerRadius": "#545f59"
+            },
+            { 
+                "id": "pupil 21",
+                "outerRadius": "#6c6437",
+                "color2": "#53565a",
+                "innerRadius": "#272b2c"
+            },
+            {
+                "id": "pupil 22",
+                "outerRadius": "#4c4d40",
+                "color2": "#91722b", 
+                "color3": "#65695e",
+                "color4": "#413d33",
+                "innerRadius": "#373e38"
+            },
+            { 
+                "id": "pupil 23",
+                "outerRadius": "#5b4d29",
+                "color2": "#3c4138",
+                "innerRadius": "#2f3130"
+            },
+            {
+                "id": "pupil 24",
+                "outerRadius": "#716c37",
+                "color2": "#545e49",
+                "innerRadius": "#2a2e2f"
+            },
+            { 
+                "id": "pupil 25",
+                "outerRadius": "#7e7f72",
+                "color2": "#9c906f", 
+                "color3": "#635c4b",
+                "innerRadius": "#5f5c58"
+            }
+        ]
+    }
+]
