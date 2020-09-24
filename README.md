@@ -9,9 +9,9 @@ Documentation and weekly submission for PGDV 5200 Data Visualization Major Studi
 | Week          |Summary of Changes|   
 | ------------- |:----------------- | 
 | Week 1        | Summary: Activate Github Repo, AWS Cloud 9, Sign up for Colab, Readings, Museum choice, Week1 Lab| 
-| Week 2        | Summary: Sketches for Met Museum, Readings, Visualization Method, Week2 Lab|   
-| Week 3        | Summary: P5 Code and Sketches for Smithsonian Museum Project|  
-| Week 4        | Summary:          | 
+| Week 2        | Summary: Sketches for Smithsonian Museum, Readings, Visualization Method, Week2 Lab|   
+| Week 3        | Summary: Sketches for Smithsonian Museum Project + Week3 Lab P5.js|  
+| Week 4        | Summary: 1:1 Meeting for Quantitative Project Smithsonians + Readings, Week4 Lab D3.js| 
 | Week 5        | Summary:          |   
 | Week 6        | Summary:          |  
 | Week 7        | Summary:          | 
