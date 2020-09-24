@@ -25,7 +25,7 @@ Before this class, you should have already created a Github repo for Major Studi
 ---
 #### Homework Documentation:
  
-![alt text](https://github.com/leeallennyc/Major-Studio-1/blob/master/week1/lab01_intro_to_coding/images/Iris_onClick.png "Iris On click Image")
-![alt text](https://github.com/leeallennyc/Major-Studio-1/blob/master/week1/lab01_intro_to_coding/images/Iris_Species_Data.png "Iris in HTML")
-![alt text](https://github.com/leeallennyc/Major-Studio-1/blob/master/week1/lab01_intro_to_coding/images/Iris_Species2.png "Console.Table Data")
+![alt text](https://github.com/leeallennyc/Major-Studio-1/blob/master/week1/images/Iris_onClick.png "Iris On click Image")
+![alt text](https://github.com/leeallennyc/Major-Studio-1/blob/master/week1/images/Iris_Species_Data.png "Iris in HTML")
+![alt text](https://github.com/leeallennyc/Major-Studio-1/blob/master/week1/images/Iris_Species2.png "Console.Table Data")
 
