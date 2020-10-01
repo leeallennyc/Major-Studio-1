@@ -193,9 +193,9 @@ function setGradient(x, y, w, h, c1a, c1b, axis) {
 ![](https://github.com/leeallennyc/Major-Studio-1/blob/master/Project01/sketches/ArtificialEye_Sketch.png "Artificial Eye")
 
 ## Continuation
-* After considerable attention working on the lerpColor function in p5.js, I worked on getting the values to align with the world population percentages. Lots of iterations happened here, and the the idea of looking across multiple collections according to eye color emerged. I also change a few things related in the design. Also did away with the radial chart idea to indicate the color values of RGB. 
+* After considerable attention working on the lerpColor function in p5.js, I worked on getting the values to align with the world population percentages. Lots of iterations happened here, and the the idea of looking across multiple collections according to eye color emerged. I also changed a few things related in the design. Did away with the radial chart idea to indicate the color values of RGB, as it took up too much space and wasn't readable. More iterations will be necessary to get this to a presentable state in code. Currently the project is in Illustrator. 
 
-* Next iteration is below:
+* Presentation iteration is below:
 
 ## Final Presentation
 ![](https://github.com/leeallennyc/Major-Studio-1/blob/master/Project01/Representing_Eye_Color.png "Representing Eye Color")
