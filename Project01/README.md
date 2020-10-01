@@ -23,14 +23,24 @@ A sample of the metadata in the JSON file:
                 "color2": "#686e67", 
                 "color3": "#afaa75",
                 "color4": "#676150", 
-                "innerRadius": "#5c5f55"
+                "innerRadius": "#5c5f55",
+                "martinScaleKey": "c5",
+                "martinScaleValue":"#59676a",
+                "pupilR": "89",
+                "pupilG": "103",
+                "pupilB": "106"
             },
             { 
                 "id": "pupil 02",
                 "outerRadius": "#7d703b", 
                 "color2": "#5d5f57", 
                 "color3": "#373739",
-                "innerRadius": "#2c3137"
+                "innerRadius": "#2c3137",
+                "martinScaleKey": "c6",
+                "martinScaleValue": "#5f6a5f",
+                "pupilR": "95",
+                "pupilG": "106",
+                "pupilB": "95"
             },
             {
                 "id": "pupil 03",
@@ -38,7 +48,12 @@ A sample of the metadata in the JSON file:
                 "color2": "#3f464b", 
                 "color3": "#60635e",
                 "color4": "#433f36", 
-                "innerRadius": "#4f504c"
+                "innerRadius": "#4f504c",
+                "martinScaleKey": "c3",
+                "martinScaleValue": "#586165",
+                "pupilR": "88",
+                "pupilG": "97",
+                "pupilB": "101"
             }
 ```
 
@@ -173,9 +188,17 @@ function setGradient(x, y, w, h, c1a, c1b, axis) {
     }
 }
 ```
-## Image sketch is here:
+## Image of first sketch is here:
 
-![alt text](https://github.com/leeallennyc/Major-Studio-1/blob/master/Project01/sketches/ArtificialEye_Sketch.png "Artificial Eye")
+![](https://github.com/leeallennyc/Major-Studio-1/blob/master/Project01/sketches/ArtificialEye_Sketch.png "Artificial Eye")
+
+## Continuation
+* After considerable attention working on the lerpColor function in p5.js, I worked on getting the values to align with the world population percentages. Lots of iterations happened here, and the the idea of looking across multiple collections according to eye color emerged. I also change a few things related in the design. Also did away with the radial chart idea to indicate the color values of RGB. 
+
+* Next iteration is below:
+
+## Final Presentation
+![](https://github.com/leeallennyc/Major-Studio-1/blob/master/Project01/Representing_Eye_Color.png "Representing Eye Color")
 
 
 
