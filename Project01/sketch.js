@@ -13,13 +13,15 @@ let w1 = 75;
 let h1 = 100;
 let w2 = 500;
 let h2 = 200;
-let xpos1 = 500;
+let xpos1 = 600;
 let ypos1 = 3800;
 let xpos2 = 0;
 let ypos2 = 3800;
 let offsetHorz = 80;
-let offsetVert = -200;
-let rbglength = 255;
+let offsetVert = -210;
+let colorValues = ["R", "G", "B"];
+let colorMin = 0;
+let colorMax = 255;
 
 let c1a, c1b, c1c, c2a, c2b, c3, c4a, c4b, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16;
 let martinScales = ["c1a", "c1b", "c1c", "c2a", "c2b", "c3", "c4a", "c4b", "c5", "c6", "c7", "c8","c9","c10","c11","c12","c13","c14","c15","c16"];
@@ -50,6 +52,11 @@ let pupilCount = [{
 function setup() {
     createCanvas(4000, 4000);
     background("floralwhite");
+
+
+  background(255);
+  noLoop();
+
 
 // Define Martin-Schultz eye color scale values as hex
 c1a = color("#617fa3"), // Light blue hex
@@ -95,29 +102,45 @@ function draw() {
 
  // Foreground color 
 
-  // Foreground Horizontal Gradients
-    // setGradientH(xpos1, ypos1, w1, h1, c1a, c1b, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 1), ypos1, w1, h1, c1b, c1c, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 2), ypos1, w1, h1, c1c, c2a, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 3), ypos1, w1, h1, c2a, c2b, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 4), ypos1, w1, h1, c2b, c3, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 5), ypos1, w1, h1, c3, c4a, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 6), ypos1, w1, h1, c4a, c4b, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 7), ypos1, w1, h1, c4b, c5, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 8), ypos1, w1, h1, c5, c6, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 9), ypos1, w1, h1, c6, c7, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 10), ypos1, w1, h1, c7, c8, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 11), ypos1, w1, h1, c8, c9, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 12), ypos1, w1, h1, c9, c10, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 13), ypos1, w1, h1, c10, c11, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 14), ypos1, w1, h1, c11, c12, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 15), ypos1, w1, h1, c12, c13, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 16), ypos1, w1, h1, c13, c14, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 17), ypos1, w1, h1, c14, c15, X_AXIS);
-    // setGradientH(xpos1 + (offsetHorz * 18), ypos1, w1, h1, c15, c16, X_AXIS);
+//   Foreground Horizontal Gradients
+    setGradientH(xpos1, ypos1, w1, h1, c1a, c1b, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 1), ypos1, w1, h1, c1b, c1c, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 2), ypos1, w1, h1, c1c, c2a, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 3), ypos1, w1, h1, c2a, c2b, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 4), ypos1, w1, h1, c2b, c3, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 5), ypos1, w1, h1, c3, c4a, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 6), ypos1, w1, h1, c4a, c4b, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 7), ypos1, w1, h1, c4b, c5, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 8), ypos1, w1, h1, c5, c6, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 9), ypos1, w1, h1, c6, c7, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 10), ypos1, w1, h1, c7, c8, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 11), ypos1, w1, h1, c8, c9, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 12), ypos1, w1, h1, c9, c10, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 13), ypos1, w1, h1, c10, c11, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 14), ypos1, w1, h1, c11, c12, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 15), ypos1, w1, h1, c12, c13, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 16), ypos1, w1, h1, c13, c14, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 17), ypos1, w1, h1, c14, c15, X_AXIS);
+    setGradientH(xpos1 + (offsetHorz * 18), ypos1, w1, h1, c15, c16, X_AXIS);
     // setGradientH(xpos1, 100, 2900, h, c1a, c16, X_AXIS);
 
 
+// let coswave = [];
+
+//     for (let i = 0; i < width; i++) {
+//         let amount = map(i, 0, width, 0, PI);
+//         coswave[i] = abs(cos(amount));
+//     } 
+
+// // Draw Array 
+//     let y1 = 0;
+//     let y2 = height / 25;
+//     y1 = y2;
+//     y2 = y1 + y1;
+//     for (let i = 0; i < width; i +=20) {
+//       stroke((coswave[i] * 255) / 4);
+//     line(i, y1, i, y2);
+//     }
     
   // Foreground Vertical Gradients
   setGradientV(xpos2, ypos2, w2, h2, c1b, c1a, Y_AXIS);
@@ -143,57 +166,57 @@ function draw() {
 
 
 // Horizontal gradient
-// function setGradientH(xpos1, ypos1, w1, h1, c1a, c1b, axis) {
-//     noFill();
-//     if (axis === X_AXIS) {
-//     // Left to right gradient
-//     for (let i = xpos1; i <= xpos1 + w1; i++) {
-//         let inter = map(i, xpos1, xpos1 + w1, 0, 1);
-//         let grad1h= lerpColor(c1a, c1b, inter);
-//         let grad2h= lerpColor(c1b, c1c, inter);
-//         let grad3h= lerpColor(c1c, c2a, inter);
-//         let grad4h= lerpColor(c2a, c2b, inter);
-//         let grad5h= lerpColor(c2b, c3, inter);
-//         let grad6h= lerpColor(c3, c4a, inter);
-//         let grad7h= lerpColor(c4a, c4b, inter);
-//         let grad8h= lerpColor(c4b, c5, inter);
-//         let grad9h= lerpColor(c5, c6, inter);
-//         let grad10h = lerpColor(c6, c7, inter);
-//         let grad11h = lerpColor(c7, c8, inter);
-//         let grad12h = lerpColor(c8, c9, inter);
-//         let grad13h = lerpColor(c9, c10, inter);
-//         let grad14h = lerpColor(c10, c11, inter);
-//         let grad15h = lerpColor(c11, c12, inter);
-//         let grad16h = lerpColor(c12, c13, inter);
-//         let grad17h = lerpColor(c13, c14, inter);
-//         let grad18h = lerpColor(c14, c15, inter);
-//         let grad19h = lerpColor(c15, c16, inter); 
+function setGradientH(xpos1, ypos1, w1, h1, c1a, c1b, axis) {
+    noFill();
+    if (axis === X_AXIS) {
+    // Left to right gradient
+    for (let i = xpos1; i <= xpos1 + w1; i++) {
+        let inter = map(i, xpos1, xpos1 + w1, 0, 1);
+        let grad1h= lerpColor(c1a, c1b, inter);
+        let grad2h= lerpColor(c1b, c1c, inter);
+        let grad3h= lerpColor(c1c, c2a, inter);
+        let grad4h= lerpColor(c2a, c2b, inter);
+        let grad5h= lerpColor(c2b, c3, inter);
+        let grad6h= lerpColor(c3, c4a, inter);
+        let grad7h= lerpColor(c4a, c4b, inter);
+        let grad8h= lerpColor(c4b, c5, inter);
+        let grad9h= lerpColor(c5, c6, inter);
+        let grad10h = lerpColor(c6, c7, inter);
+        let grad11h = lerpColor(c7, c8, inter);
+        let grad12h = lerpColor(c8, c9, inter);
+        let grad13h = lerpColor(c9, c10, inter);
+        let grad14h = lerpColor(c10, c11, inter);
+        let grad15h = lerpColor(c11, c12, inter);
+        let grad16h = lerpColor(c12, c13, inter);
+        let grad17h = lerpColor(c13, c14, inter);
+        let grad18h = lerpColor(c14, c15, inter);
+        let grad19h = lerpColor(c15, c16, inter); 
 
-//         stroke(
-//             grad1h,
-//             grad2h, 
-//             grad3h, 
-//             grad4h, 
-//             grad5h,        
-//             grad6h,
-//             grad7h,
-//             grad8h,
-//             grad9h,
-//             grad10h,
-//             grad11h, 
-//             grad12h, 
-//             grad13h, 
-//             grad14h, 
-//             grad15h,
-//             grad16h,
-//             grad17h, 
-//             grad18h,
-//             grad19h
-//             );
-//         line(i, ypos1, i, ypos1 + h1);
-//         }
-//     }
-// }
+        stroke(
+            grad1h,
+            grad2h, 
+            grad3h, 
+            grad4h, 
+            grad5h,        
+            grad6h,
+            grad7h,
+            grad8h,
+            grad9h,
+            grad10h,
+            grad11h, 
+            grad12h, 
+            grad13h, 
+            grad14h, 
+            grad15h,
+            grad16h,
+            grad17h, 
+            grad18h,
+            grad19h
+            );
+        line(i, ypos1, i, ypos1 + h1);
+        }
+    }
+}
 
 
 // Vertical Gradient
