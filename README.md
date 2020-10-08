@@ -12,8 +12,8 @@ Documentation and weekly submission for PGDV 5200 Data Visualization Major Studi
 | Week 2        | Summary: Sketches for Smithsonian Museum, Readings, Visualization Method, Week2 Lab|   
 | Week 3        | Summary: Sketches for Smithsonian Museum Project + Week3 Lab P5.js|  
 | Week 4        | Summary: 1:1 Meeting for Quantitative Project Smithsonian + Readings, Week4 Lab D3.js| 
-| Week 5        | Summary:          |   
-| Week 6        | Summary:          |  
+| Week 5        | Summary: Presentations for Quantitative [Project 1](https://github.com/leeallennyc/Major-Studio-1/tree/master/Project01)|   
+| Week 6        | Summary: Start Project 2 Qualitative|  
 | Week 7        | Summary:          | 
 | Week 8        | Summary:          |   
 | Week 9        | Summary:          | 
