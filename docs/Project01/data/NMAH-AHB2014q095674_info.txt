@@ -1,0 +1,43 @@
+Smithsonian Institution
+______________________
+Id:NMAH-AHB2014q095674
+______________________
+Usage:
+Usage Conditions Apply
+There are restrictions for re-using this media. For more information, visit the Smithsonian's <a href="https://www.si.edu/Termsofuse">Terms of Use</a> page.
+______________________
+Related objects:
+Object Name: color guide, artificial eye; prosthesis
+Guid: http://n2t.net/ark:/65665/ng49ca746a9-97a4-704b-e053-15f76fa0b4fa
+Data Source: National Museum of American History
+maker: Dietz, Victor H.
+maker: Wirtz, Milton S.
+maker: Erph, Stanley F.
+Physical Description: black (overall color)
+Physical Description: brown (overall color)
+Physical Description: yellow (overall color)
+Physical Description: acrylic resin (overall material)
+Physical Description: cellulose acetate (overall material)
+Physical Description: plastic (overall material)
+Physical Description: paint, oil (overall material)
+Physical Description: blue (overall color)
+Physical Description: molded (overall production method/technique)
+Measurements: average spatial: 11 cm x 5.6 cm; 4 5/16 in x 2 3/16 in
+Measurements: overall: 2 1/8 in x 8 in x 5 in; 5.3975 cm x 20.32 cm x 12.7 cm
+Location: Currently not on view
+place made: United States: Missouri, Camp Crowder
+place made: United States: Missouri, Camp Crowder
+place made: United States: Missouri, Camp Crowder
+Credit Line: Dr. Milton S. Wirtz
+Unique Media Name: NMAH-AHB2014q095674
+ID Number: 1991.0417.10
+catalog number: 1991.0417.10
+accession number: 1991.0417
+Date made: 1943
+Date made: 1943
+Date made: 1943
+associated dates: 1950 02 21 / 1950 02 21
+Object Name: Color Guide
+Object Name: color guide, artificial eye
+Object Name: prosthesis
+
