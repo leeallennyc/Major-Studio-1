@@ -3,8 +3,10 @@
 ### Summary:
 For this quantitative visualization project we are looking at the [Smithsonian's archive](https://www.si.edu/openaccess) and [API](http://edan.si.edu/openaccess/apidocs/) through [Open Access Collections](https://collections.si.edu/search/).
 
-* The purpose of the project is to quantitatively represent data using information from the Smithsonian.
+The purpose of the project is to quantitatively represent data using information from the Smithsonian.
+
 ---
+
 I've chosen a specific object from the Smithsonian's National Museum of American History called a [Color Guide](https://www.si.edu/object/color-guide-artificial-eye-prosthesis:nmah_1119630), which was used a tool for matching the color of the eye when making prosthetic eyes. 
 
 My first goal was to create a custom JSON file to represent this object digitally. I created a nested JSON file and used a color picker in Photoshop to extract all the meaningful data from the colors used to re-create each pupil:
