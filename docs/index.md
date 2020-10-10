@@ -1,8 +1,4 @@
-# Parsons Data Visualization MS 
-## Major-Studio-1-fall-2020
-
 ### Project 1 - Quantitative
-
 ---
 ### Summary:
 For this quantitative visualization project we are looking at the [Smithsonian's archive](https://www.si.edu/openaccess) and [API](http://edan.si.edu/openaccess/apidocs/) through [Open Access Collections](https://collections.si.edu/search/).
@@ -190,7 +186,7 @@ function setGradient(x, y, w, h, c1a, c1b, axis) {
 ```
 ## Image of first sketch is here:
 
-![](https://github.com/leeallennyc/Major-Studio-1/blob/master/Project01/sketches/ArtificialEye_Sketch.png "Artificial Eye")
+![](https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project01/sketches/ArtificialEye_Sketch.png "Artificial Eye")
 
 ## Continuation
 * After considerable attention working on the lerpColor function in p5.js, I worked on getting the values to align with the world population percentages. Lots of iterations happened here, and the the idea of looking across multiple collections according to eye color emerged. I also changed a few things related in the design. Did away with the radial chart idea to indicate the color values of RGB, as it took up too much space and wasn't readable. More iterations will be necessary to get this to a presentable state in code. Currently the project is in Illustrator. 
@@ -198,6 +194,6 @@ function setGradient(x, y, w, h, c1a, c1b, axis) {
 * Presentation iteration is below:
 
 ## Final Presentation
-![](https://github.com/leeallennyc/Major-Studio-1/blob/master/Project01/Representing_Eye_Color.png "Representing Eye Color")
+![](https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project01/Representing_Eye_Color.png "Representing Eye Color")
 
 
