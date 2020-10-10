@@ -55,7 +55,8 @@ A sample of the metadata in the JSON file:
 
 My goal is to better understand the numeric representation of these colored eyes as it relates to a standard tool in Physcial Anthropology called the [MartinSchultz scale](https://en.wikipedia.org/wiki/Martin%E2%80%93Schultz_scale). We will be looking at the quantitative color measurements for each pupil color and where on the spectrum the pupil colors collectively fall in relation to eye color in world population. 
 
-* The original idea was to use a histogram to read the color measurments, but I've since adapted that to use a radial chart for each pupil. 
+The original idea was to use a histogram to read the color measurments, but I've since adapted that to use a radial chart for each pupil.
+
 ---
 ## Code:
 
