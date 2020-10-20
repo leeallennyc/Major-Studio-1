@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Major Studio 1 - Lab 6 - d3 Image Display</title>
+    <title>Eyes of The Smithsonian</title>
 
     <style type="text/css">
       *{
@@ -12,7 +12,7 @@
       body{
         overflow:  auto;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        background:#e0e0e0;
+        background:floralwhite;
         padding:2rem;
         color:#222;
         letter-spacing:-0.5pt;
@@ -24,6 +24,12 @@
         grid-gap: 2rem;
       }
       
+      h1{
+        font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        color: red;
+      }
       div.smithsonian-card{
         max-width: 400px;
         display: inline-block;
@@ -38,20 +44,22 @@
       }
       div.smithsonian-card div.image{
         margin-bottom:1rem;
-        width:200px;height:200px;
+        width:300px;height:300px;
         display:flex;
         align-items: flex-end;
       }
       div.smithsonian-card div.image img{
         max-width:100%;height:auto;
-        max-height:200px;
+        max-height:300px;
+        border-top-right-radius:100px;
+        border-bottom-left-radius: 100px;
       }
       .object-date{ color:#999; }
     </style>
   </head>
   <body>
 
-    <h1>An Image Collection</h1>
+    <h1>Eyes of The Smithsonian</h1>
     
     <!-- where our images go -->
     <div id="app"></div>
