@@ -2,8 +2,9 @@
 // because we have the d3 code
 // in our index.html file
 
+
 // load JSON using d3.json
-d3.json('./data.json')
+d3.json('./data2.json')
   .then( json => {
       // execute our 
       // display images function
