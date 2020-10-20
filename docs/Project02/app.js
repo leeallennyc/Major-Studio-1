@@ -4,7 +4,7 @@
 
 
 // load JSON using d3.json
-d3.json('./data2.json')
+d3.json('./data.json')
   .then( json => {
       // execute our 
       // display images function
