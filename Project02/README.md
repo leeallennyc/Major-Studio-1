@@ -20,7 +20,7 @@ For this qualitative visualization project we are looking at the [Smithsonian's 
 ---
 ### Second Round Sketch:
 ---
-* After feedback from the previous week, I decided to move forward with "THE EYES OF THE SMITHSONIAN" idea, and continued sketching. Below is the idea that I've been developing. 
+* After feedback from the previous week, I decided to move forward with "THE EYES OF THE SMITHSONIAN" idea, and continued sketching. Below is the idea that I've been developing. The idea is to be able to search different collections at the Smithsonian through the eyes of the artwork. Color is a way of clustering, and the idea is to be able to click on a type of eye color using the concentric/ringed circle on the upper left as a way of filtering. This would be used in combination with a traditional type search feature on the upper right. When an eye is clicked it brings up the artwork and some of the metadata about object on the left, with a larger eye image outlined by the eye color next to the object.   
 
 <img src="https://github.com/leeallennyc/Major-Studio-1/blob/master/Project02/sketches/Major_Studio_Project2_sketch.png" width=75% height=75%>
 
