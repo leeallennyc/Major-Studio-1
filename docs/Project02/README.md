@@ -88,7 +88,10 @@ Sample of our JSON return:
 Code Sketch to get all the images on a single page:
 <img src="https://github.com/leeallennyc/Major-Studio-1/blob/master/Project02/sketches/GH_Pages_Image_Uploads.png" width=75% height=75%>
 
-More work to come.
+More work to come around using facial recognition and [RunwayML](https://runwayml.com/)
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/Project02/facial_recognition/runway_ml.png" width=75% height=75%>
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/Project02/facial_recognition/fr_1.png" width=75% height=75%>
+
 
 
 
