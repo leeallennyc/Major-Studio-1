@@ -92,6 +92,12 @@ More work to come around using facial recognition and [RunwayML](https://runwaym
 <img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/Project02/facial_recognition/runway_ml.png" width=75% height=75%>
 <img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/Project02/facial_recognition/fr_1.png" width=75% height=75%>
 
+* Here we are extending the concept of finding the eyes through facial recognition beyond only one collection to incorporate different collections and objects throughout the museum.  
+
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/Project02/facial_recognition/Project_02_sketch.jpg" width=75% height=75%>
+
+
+
 
 
 
