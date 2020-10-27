@@ -1,0 +1,925 @@
+[
+    {
+      "objectID": "edanmdm-nmnhentomology_9144633",
+      "title": "Tabanus monoensis",
+      "date": "1910s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258448_Tabanus_monoensis_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258448_Tabanus_monoensis_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258448_Tabanus_monoensis_ht_face_lateral_screen.jpg",
+      "place": "Topaz, Mono, California, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_11390420",
+      "title": "Bombus sp.",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT01045241_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT01045241_thumb",
+      "filename": "NMNH-USNMENT01045241_screen.jpg",
+      "place": "Ireland's Eye, [Not Stated], Leinster, Ireland"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_11397993",
+      "title": "Bombus sp.",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT01064417_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT01064417_thumb",
+      "filename": "NMNH-USNMENT01064417_screen.jpg",
+      "place": "Ireland's Eye, Dublin, Leinster, Ireland"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_11398057",
+      "title": "Bombus sp.",
+      "date": "1940s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT01064196_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT01064196_thumb",
+      "filename": "NMNH-USNMENT01064196_screen.jpg",
+      "place": "Ireland's Eye, Dublin, Leinster, Ireland"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_11320929",
+      "title": "Bombus (Psithyrus) barbutellus",
+      "date": "1940s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00997514_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00997514_thumb",
+      "filename": "NMNH-USNMENT00997514_screen.jpg",
+      "place": "Irelands Eye, [Not Stated], Colorado, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152591",
+      "title": "Tabanus (Chelotabanus) attenuatus",
+      "date": "1960s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258372_Tabanus_attenuatus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258372_Tabanus_attenuatus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258372_Tabanus_attenuatus_ht_face_lateral_screen.jpg",
+      "place": "Rancho Chiquito; km 62, Comayagua, Honduras"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152232",
+      "title": "Tabanus brevicallus",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258386_Tabanus_brevicallus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258386_Tabanus_brevicallus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258386_Tabanus_brevicallus_ht_face_lateral_screen.jpg",
+      "place": "Surigao, Mindanao, Surigao del Norte, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150659",
+      "title": "Tabanus sphinx",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258486_Tabanus_sphinx_ht_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258486_Tabanus_sphinx_ht_lateral_thumb",
+      "filename": "NMNH-USNMENT00258486_Tabanus_sphinx_ht_lateral_screen.jpg",
+      "place": "Chiengmai, Chiang Mai, Thailand"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148346",
+      "title": "Cydistomyia (Cydistomyia) pilipennis",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258467_Cydistomyia_pilipennis_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258467_Cydistomyia_pilipennis_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258467_Cydistomyia_pilipennis_ht_face_lateral_screen.jpg",
+      "place": "Kanneliya, Galle, Southern, Sri Lanka"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150610",
+      "title": "Tabanus pellus",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258465_Tabanus_pellus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258465_Tabanus_pellus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258465_Tabanus_pellus_ht_face_lateral_screen.jpg",
+      "place": "Victorias; Negros, Negros Occidental, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148345",
+      "title": "Cydistomyia (Cydistomyia) philipi",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258468_Cydistomyia_philipi_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258468_Cydistomyia_philipi_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258468_Cydistomyia_philipi_ht_face_lateral_screen.jpg",
+      "place": "Kanneliya, Galle, Sri Lanka"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152592",
+      "title": "Tabanus audyi",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258373_Tabanus_audyi_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258373_Tabanus_audyi_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258373_Tabanus_audyi_ht_face_lateral_screen.jpg",
+      "place": "Molaya, Trengganu, besut Dist., crunong Mt, Terengganu, Malaysia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150604",
+      "title": "Tabanus konis",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258433_Tabanus_konis_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258433_Tabanus_konis_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258433_Tabanus_konis_ht_face_lateral_screen.jpg",
+      "place": "[Not Stated], Chiang Mai, Thailand"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152606",
+      "title": "Tabanus fascius",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258408_Tabanus_fascius_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258408_Tabanus_fascius_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258408_Tabanus_fascius_ht_face_lateral_screen.jpg",
+      "place": "40 km wsw Khong, [Not Stated], Cambodia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148234",
+      "title": "Haematopota prolixa",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258471_Haematopota_prolixa_ht_label2_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258471_Haematopota_prolixa_ht_label2_thumb",
+      "filename": "NMNH-USNMENT00258471_Haematopota_prolixa_ht_label2_screen.jpg",
+      "place": "40 km WSW Khong, [Not Stated], Cambodia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146518",
+      "title": "Tabanus gladiator",
+      "date": "1910s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258414_tabanus_gladiator_75_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258414_tabanus_gladiator_75_thumb",
+      "filename": "NMNH-USNMENT00258414_tabanus_gladiator_75_screen.jpg",
+      "place": "Charleston, South Carolina, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150637",
+      "title": "Haematopota bequaerti",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258380_Haematopota_bequaerti_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258380_Haematopota_bequaerti_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258380_Haematopota_bequaerti_ht_face_lateral_screen.jpg",
+      "place": "Hunuwilagama, near Wilpattu, Anuradhapura, Sri Lanka"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150665",
+      "title": "Tabanus traubi",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258510_tabanus_traubi_75_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258510_tabanus_traubi_75_thumb",
+      "filename": "NMNH-USNMENT00258510_tabanus_traubi_75_screen.jpg",
+      "place": "Langkawi Is.; Kedah R., Kedah, Malaysia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150670",
+      "title": "Tabanus zoster",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258527_tabanus_zoster_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258527_tabanus_zoster_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258527_tabanus_zoster_anteriorhead_sl_screen.jpg",
+      "place": "Chiengmai, Chiang Mai, Thailand"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146205",
+      "title": "Tabanus oklahomensis",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258462_Tabanus_oklahomensis_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258462_Tabanus_oklahomensis_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258462_Tabanus_oklahomensis_ht_face_lateral_screen.jpg",
+      "place": "Atoka, Oklahoma, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150667",
+      "title": "Tabanus vittiger nippontucki",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258458_tabanus_vittiger_anteriorhead_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258458_tabanus_vittiger_anteriorhead_thumb",
+      "filename": "NMNH-USNMENT00258458_tabanus_vittiger_anteriorhead_screen.jpg",
+      "place": "Westmoreland, Imperial, California, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150607",
+      "title": "Tabanus neoindianus",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258453_Tabanus_neoindianus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258453_Tabanus_neoindianus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258453_Tabanus_neoindianus_ht_face_lateral_screen.jpg",
+      "place": "Mati, Mindanao, Davao Oriental, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150613",
+      "title": "Tabanus ruficoloratus",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258478_Tabanus_ruficoloratus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258478_Tabanus_ruficoloratus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258478_Tabanus_ruficoloratus_ht_face_lateral_screen.jpg",
+      "place": "Sandakan; Borneo, Sabah, Malaysia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152587",
+      "title": "Tabanus acuminaris",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258355_Tabanus_acuminaris_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258355_Tabanus_acuminaris_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258355_Tabanus_acuminaris_ht_face_lateral_screen.jpg",
+      "place": "Thailand; chieg-mai, Chiang Mai, Thailand"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146521",
+      "title": "Tabanus arborealis",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258367_tabanus_arborealis_75_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258367_tabanus_arborealis_75_thumb",
+      "filename": "NMNH-USNMENT00258367_tabanus_arborealis_75_screen.jpg",
+      "place": "Chittenden, Rutland, Vermont, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152229",
+      "title": "Tabanus anomalus",
+      "date": "1900s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258366_tabanus_anomalus_75_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258366_tabanus_anomalus_75_sl_thumb",
+      "filename": "NMNH-USNMENT00258366_tabanus_anomalus_75_sl_screen.jpg",
+      "place": "Philippine Ids, Unknown, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150634",
+      "title": "Cydistomyia (Cydistomyia) tibialis",
+      "date": "1970s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258506_Cydistomyia_tibialis_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258506_Cydistomyia_tibialis_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258506_Cydistomyia_tibialis_ht_face_lateral_screen.jpg",
+      "place": "20 mi. NW Polonnaruwa, Polonnaruwa, Sri Lanka"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150606",
+      "title": "Tabanus mogollon",
+      "date": "1960s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258447_Tabanus_mogollon_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258447_Tabanus_mogollon_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258447_Tabanus_mogollon_ht_face_lateral_screen.jpg",
+      "place": "Horton Creek, Tonto Recreation Area, Gila, Arizona, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152594",
+      "title": "Tabanus caenosus",
+      "date": "1960s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258389_Tabanus_caenosus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258389_Tabanus_caenosus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258389_Tabanus_caenosus_ht_face_lateral_screen.jpg",
+      "place": "Southwestern Research Station, Chiricahua Mountains, Cochise, Arizona, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150638",
+      "title": "Haematopota athlyna",
+      "date": "1970s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258369_haematopota_athlyna_75_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258369_haematopota_athlyna_75_sl_thumb",
+      "filename": "NMNH-USNMENT00258369_haematopota_athlyna_75_sl_screen.jpg",
+      "place": "Ranch de Madina, Sikasso, Mali"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148236",
+      "title": "Haematopota whartoni",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258523_haematopota_whartoni_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258523_haematopota_whartoni_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258523_haematopota_whartoni_anteriorhead_sl_screen.jpg",
+      "place": "40 km WSW Khong, [Not Stated], Cambodia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9143749",
+      "title": "Tabanus hookeri",
+      "date": "1910s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258426_tabanus_hookeri_anteriorhead_sl_screen.jpg",
+      "place": "Mayagüez, Puerto Rico, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148235",
+      "title": "Haematopota scanloni",
+      "date": "1960s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258484_Haematopota_scanloni_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258484_Haematopota_scanloni_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258484_Haematopota_scanloni_ht_face_lateral_screen.jpg",
+      "place": "Ampur Muang, Udon Thani, Thailand"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150664",
+      "title": "Tabanus toumanoffi",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258508_Tabanus_toumanoffi_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258508_Tabanus_toumanoffi_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258508_Tabanus_toumanoffi_ht_face_lateral_screen.jpg",
+      "place": "50 km. W.S.W. Khong, Cambodia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150612",
+      "title": "Tabanus pseudixion",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258475_Tabanus_pseudixion_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258475_Tabanus_pseudixion_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258475_Tabanus_pseudixion_ht_face_lateral_screen.jpg",
+      "place": "Mt. Galintan; Mindanao, Davao, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150614",
+      "title": "Tabanus samarensis",
+      "date": "1940s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258479_Tabanus_samarensis_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258479_Tabanus_samarensis_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258479_Tabanus_samarensis_ht_face_lateral_screen.jpg",
+      "place": "Osmena, Samar, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146465",
+      "title": "Tabanus mularis",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258452_Tabanus_mularis_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258452_Tabanus_mularis_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258452_Tabanus_mularis_ht_face_lateral_screen.jpg",
+      "place": "Baton Rouge, East Baton Rouge, Louisiana, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146691",
+      "title": "Tabanus boreus",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258388_Tabanus_boreus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258388_Tabanus_boreus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258388_Tabanus_boreus_ht_face_lateral_screen.jpg",
+      "place": "Alaska-Yukon boundary, North Slope, Alaska, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150611",
+      "title": "Tabanus provocans",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258473_Tabanus_provocans_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258473_Tabanus_provocans_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258473_Tabanus_provocans_ht_face_lateral_screen.jpg",
+      "place": "Island Sibuyan, Romblon, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9147195",
+      "title": "Merycomyia haitiensis",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258421_Merycomyia_haitiensis_ht_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258421_Merycomyia_haitiensis_ht_lateral_thumb",
+      "filename": "NMNH-USNMENT00258421_Merycomyia_haitiensis_ht_lateral_screen.jpg",
+      "place": "[Not Stated], Haiti"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146692",
+      "title": "Tabanus fretus",
+      "date": "1910s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258410_Tabanus_fretus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258410_Tabanus_fretus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258410_Tabanus_fretus_ht_face_lateral_screen.jpg",
+      "place": "Lyme, New London, Connecticut, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148340",
+      "title": "Tabanus krombeini",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258435_Tabanus_krombeini_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258435_Tabanus_krombeini_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258435_Tabanus_krombeini_ht_face_lateral_screen.jpg",
+      "place": "0.5 mi N.E. Kokmotte; Wilpattu Natl. Park, Mannar, Sri Lanka"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150605",
+      "title": "Tabanus luzonensis",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258439_Tabanus_luzonensis_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258439_Tabanus_luzonensis_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258439_Tabanus_luzonensis_ht_face_lateral_screen.jpg",
+      "place": "Ube Laguna, Luzon, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152590",
+      "title": "Dichelacera beameri",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258378_Dichelacera_beameri_ht_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258378_Dichelacera_beameri_ht_lateral_thumb",
+      "filename": "NMNH-USNMENT00258378_Dichelacera_beameri_ht_lateral_screen.jpg",
+      "place": "Jalastoc; Mor.; Mexico, Morelos, Mexico"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152584",
+      "title": "Tabanus abaculus",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-usnment00258352_tabanus_abaculus_ht_head_anterior_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-usnment00258352_tabanus_abaculus_ht_head_anterior_thumb",
+      "filename": "NMNH-usnment00258352_tabanus_abaculus_ht_head_anterior_screen.jpg",
+      "place": "Malaya, Trengganu, dungan, Bukit besu, Terengganu, Malaysia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146520",
+      "title": "Tabanus lacustris",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258436_Tabanus_lacustris_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258436_Tabanus_lacustris_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258436_Tabanus_lacustris_ht_face_lateral_screen.jpg",
+      "place": "Lakeland, Polk, Florida, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152610",
+      "title": "Cydistomyia insol",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258430_cydistomyia_insol_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258430_cydistomyia_insol_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258430_cydistomyia_insol_anteriorhead_sl_screen.jpg",
+      "place": "N.W. Panay, Unknown, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146689",
+      "title": "Tabanus morbosus",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258450_tabanus_morbosus_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258450_tabanus_morbosus_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258450_tabanus_morbosus_anteriorhead_sl_screen.jpg",
+      "place": "Huachuca Mountains, Cochise, Arizona, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150631",
+      "title": "Chrysops tidwelli",
+      "date": "1960s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258507_chrysops_tidwelli_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258507_chrysops_tidwelli_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258507_chrysops_tidwelli_anteriorhead_sl_screen.jpg",
+      "place": "[Not Stated], Escambia, Florida, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150661",
+      "title": "Tabanus subhybridus",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258493_tabanus_subhybridus_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258493_tabanus_subhybridus_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258493_tabanus_subhybridus_anteriorhead_sl_screen.jpg",
+      "place": "10 mi W. Ipoh, Perak, Malaysia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148226",
+      "title": "Haematopota albimanica",
+      "date": "1960s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258358_Haematopota_albimanica_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258358_Haematopota_albimanica_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258358_Haematopota_albimanica_ht_face_lateral_screen.jpg",
+      "place": "Mount Sontra, Quang Nam Run, Quang Nam-da Nang, Vietnam"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150668",
+      "title": "Tabanus vix",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258519_Tabanus_vix_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258519_Tabanus_vix_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258519_Tabanus_vix_ht_face_lateral_screen.jpg",
+      "place": "Langkom Kudat, Sabah, Malaysia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152605",
+      "title": "Hybomitra stigmoptera fuji",
+      "date": "1960s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258491_hybomitra_stigmoptera_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258491_hybomitra_stigmoptera_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258491_hybomitra_stigmoptera_anteriorhead_sl_screen.jpg",
+      "place": "Mt. Fuji, 2000-8000 ft., Unknown, Japan"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150642",
+      "title": "Tabanus (Lophotabanus) tardinotus",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258500_Tabanus_tardinotus_ht_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258500_Tabanus_tardinotus_ht_lateral_thumb",
+      "filename": "NMNH-USNMENT00258500_Tabanus_tardinotus_ht_lateral_screen.jpg",
+      "place": "Clydesdale, Jamaica"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148230",
+      "title": "Haematopota gregoryi",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258418_haematopota_gregoryi_lateralhab_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258418_haematopota_gregoryi_lateralhab_sl_thumb",
+      "filename": "NMNH-USNMENT00258418_haematopota_gregoryi_lateralhab_sl_screen.jpg",
+      "place": "Ningyuenfu, [Not Stated], China"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148229",
+      "title": "Haematopota famicis",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258407_haematopota_famicis_75_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258407_haematopota_famicis_75_sl_thumb",
+      "filename": "NMNH-USNMENT00258407_haematopota_famicis_75_sl_screen.jpg",
+      "place": "Yim Na San, Guangdong, China"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9147232",
+      "title": "Merycomyia brunnea",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258387_merycomyia_brunnea_75_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258387_merycomyia_brunnea_75_sl_thumb",
+      "filename": "NMNH-USNMENT00258387_merycomyia_brunnea_75_sl_screen.jpg",
+      "place": "New Smyrna Beach, Volusia, Florida, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150639",
+      "title": "Haematopota stonei",
+      "date": "1970s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258489_Haematopota_stonei_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258489_Haematopota_stonei_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258489_Haematopota_stonei_ht_face_lateral_screen.jpg",
+      "place": "Chitawan, Narayani, Nepal"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150671",
+      "title": "Chalybosoma malkini",
+      "date": "1940s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258441_chalybosoma_malkini_lateralhab_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258441_chalybosoma_malkini_lateralhab_sl_thumb",
+      "filename": "NMNH-USNMENT00258441_chalybosoma_malkini_lateralhab_sl_screen.jpg",
+      "place": "Jayapura, Papua, Indonesia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9154140",
+      "title": "Tabanus bishoppi",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258382_tabanus_bishoppi_dorsalhab_pinshift_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258382_tabanus_bishoppi_dorsalhab_pinshift_sl_thumb",
+      "filename": "NMNH-USNMENT00258382_tabanus_bishoppi_dorsalhab_pinshift_sl_screen.jpg",
+      "place": "Silver Springs, Marion, Florida, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148232",
+      "title": "Haematopota hardyi",
+      "date": "1940s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258422_haematopota_hardyi_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258422_haematopota_hardyi_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258422_haematopota_hardyi_anteriorhead_sl_screen.jpg",
+      "place": "10 miles north of Tinsukia, Assam, India"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148344",
+      "title": "Cydistomyia (Cydistomyia) brunnea",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258390_cydistomyia_brunnea_75_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258390_cydistomyia_brunnea_75_sl_thumb",
+      "filename": "NMNH-USNMENT00258390_cydistomyia_brunnea_75_sl_screen.jpg",
+      "place": "Sinharaja jungle; Kanneliya section, Galle, Sri Lanka"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148343",
+      "title": "Tabanus wilpattuensis",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258524_Tabanus_wilpattuensis_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258524_Tabanus_wilpattuensis_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258524_Tabanus_wilpattuensis_ht_face_lateral_screen.jpg",
+      "place": "0.5 mi. ne. Kokmotte, Mannar, Sri Lanka"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150662",
+      "title": "Tabanus subjoidus",
+      "date": "1940s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258494_tabanus_subjoidus_75_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258494_tabanus_subjoidus_75_thumb",
+      "filename": "NMNH-USNMENT00258494_tabanus_subjoidus_75_screen.jpg",
+      "place": "Iwahig, Palawan, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152585",
+      "title": "Tabanus (Pseudobolbodimyia) abauristriatus",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258353_tabanus_abauristriatus_lateralhab_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258353_tabanus_abauristriatus_lateralhab_thumb",
+      "filename": "NMNH-USNMENT00258353_tabanus_abauristriatus_lateralhab_screen.jpg",
+      "place": "40 km wsw Khong, [Not Stated], Cambodia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9142926",
+      "title": "Tabanus subniger",
+      "date": "1900s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258496_Tabanus_subniger_ht_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258496_Tabanus_subniger_ht_lateral_thumb",
+      "filename": "NMNH-USNMENT00258496_Tabanus_subniger_ht_lateral_screen.jpg",
+      "place": "Lake Forest, Lake, Illinois, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152595",
+      "title": "Tabanus cambodianus",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258392_tabanus_cambodianus_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258392_tabanus_cambodianus_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258392_tabanus_cambodianus_anteriorhead_sl_screen.jpg",
+      "place": "40 km WSW Khong, [Not Stated], Cambodia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146158",
+      "title": "Dichelacera analis",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258363_dichelacera_analis_anteriorhead_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258363_dichelacera_analis_anteriorhead_thumb",
+      "filename": "NMNH-USNMENT00258363_dichelacera_analis_anteriorhead_screen.jpg",
+      "place": "Higuito, San Mateo, Alajuela, Costa Rica"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150608",
+      "title": "Tabanus nilakinus",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258456_Tabanus_nilakinus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258456_Tabanus_nilakinus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258456_Tabanus_nilakinus_ht_face_lateral_screen.jpg",
+      "place": "Banuhok, Loei dansai, Loei, Thailand"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152228",
+      "title": "Gastroxides atricincta",
+      "date": "1900s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258370_Gastroxides_atricincta_ht_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258370_Gastroxides_atricincta_ht_lateral_thumb",
+      "filename": "NMNH-USNMENT00258370_Gastroxides_atricincta_ht_lateral_screen.jpg",
+      "place": "Buitenzorg, Java, Unknown, Indonesia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9144698",
+      "title": "Tabanus sexfasciatus",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258483_Tabanus_sexfasciatus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258483_Tabanus_sexfasciatus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258483_Tabanus_sexfasciatus_ht_face_lateral_screen.jpg",
+      "place": "Camp 334 near Fairbanks, Alaskan Engineering Comission, Fairbanks North Star, Alaska, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146568",
+      "title": "Tabanus utahensis",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258517_tabanus_utahensis_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258517_tabanus_utahensis_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258517_tabanus_utahensis_anteriorhead_sl_screen.jpg",
+      "place": "Dolomite, Tooele, Utah, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146684",
+      "title": "Dicladocera finitima",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258409_Dicladocera_finitima_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258409_Dicladocera_finitima_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258409_Dicladocera_finitima_ht_face_lateral_screen.jpg",
+      "place": "Jacksonville, Duval, Florida, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152611",
+      "title": "Tabanus jacobi",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258431_Tabanus_jacobi_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258431_Tabanus_jacobi_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258431_Tabanus_jacobi_ht_face_lateral_screen.jpg",
+      "place": "Nepal; Amlekhgani; 500m., Unknown, Nepal"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9145950",
+      "title": "Pangonia melanopus",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258443_Pangonia_melanopa_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258443_Pangonia_melanopa_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258443_Pangonia_melanopa_ht_face_lateral_screen.jpg",
+      "place": "Presidio River, Villa Union, Sinaloa, Mexico"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9205128",
+      "title": "Mesopangonius brackleyae",
+      "date": "1980s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258384_Mesopangonius_brackleyae_ht_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258384_Mesopangonius_brackleyae_ht_lateral_thumb",
+      "filename": "NMNH-USNMENT00258384_Mesopangonius_brackleyae_ht_lateral_screen.jpg",
+      "place": "Kinabalu National Park, Headquarters Area, Sabah, Malaysia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146907",
+      "title": "Tabanus comosus",
+      "date": "1940s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258396_Tabanus_comosus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258396_Tabanus_comosus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258396_Tabanus_comosus_ht_face_lateral_screen.jpg",
+      "place": "San Fernando de Atabapo, Amazonas, Venezuela"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9147233",
+      "title": "Asaphomyia texensis",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258502_Asaphomyia_texensis_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258502_Asaphomyia_texensis_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258502_Asaphomyia_texensis_ht_face_lateral_screen.jpg",
+      "place": "Columbus, Texas, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150660",
+      "title": "Tabanus subcanipus",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258492_Tabanus_subcanipus_ht_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258492_Tabanus_subcanipus_ht_lateral_thumb",
+      "filename": "NMNH-USNMENT00258492_Tabanus_subcanipus_ht_lateral_screen.jpg",
+      "place": "50 km. W.S.W. Khong, Cambodia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152593",
+      "title": "Tabanus auripilosus",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258375_Tabanus_auripilosus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258375_Tabanus_auripilosus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258375_Tabanus_auripilosus_ht_face_lateral_screen.jpg",
+      "place": "Philippines; Lucban; Luzon; Tayabas Prov., Quezon, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152609",
+      "title": "Tabanus gracilicornis insulicola",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258416_Tabanus_gracilicornis_insulicola_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258416_Tabanus_gracilicornis_insulicola_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258416_Tabanus_gracilicornis_insulicola_ht_face_lateral_screen.jpg",
+      "place": "Anauila Isl., [Not Stated], Bahamas, The"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9142302",
+      "title": "Tabanus trigonus",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258512_Tabanus_trigonus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258512_Tabanus_trigonus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258512_Tabanus_trigonus_ht_face_lateral_screen.jpg",
+      "place": "[Not Stated], Japan"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146687",
+      "title": "Tabanus sublongus",
+      "date": "1910s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258495_Tabanus_sublongus_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258495_Tabanus_sublongus_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258495_Tabanus_sublongus_ht_face_lateral_screen.jpg",
+      "place": "Plummers Island, Montgomery, Maryland, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146690",
+      "title": "Tabanus moderator",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258446_Tabanus_moderator_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258446_Tabanus_moderator_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258446_Tabanus_moderator_ht_face_lateral_screen.jpg",
+      "place": "Atlanta, Fulton, Georgia, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152588",
+      "title": "Tabanus baguiensis",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258376_Tabanus_baguiensis_ht_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258376_Tabanus_baguiensis_ht_lateral_thumb",
+      "filename": "NMNH-USNMENT00258376_Tabanus_baguiensis_ht_lateral_screen.jpg",
+      "place": "Baguio, Benguet, Benguet, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152589",
+      "title": "Tabanus bakeri",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258377_Tabanus_bakeri_ht_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258377_Tabanus_bakeri_ht_lateral_thumb",
+      "filename": "NMNH-USNMENT00258377_Tabanus_bakeri_ht_lateral_screen.jpg",
+      "place": "Samar Island, Philippines, Samar, Philippines"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9145949",
+      "title": "Tabanus punctipleura",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258476_Tabanus_punctipleura_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258476_Tabanus_punctipleura_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258476_Tabanus_punctipleura_ht_face_lateral_screen.jpg",
+      "place": "San Carlos, [Not Stated], Costa Rica"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146686",
+      "title": "Tabanus fairchildi",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258406_Tabanus_fairchildi_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258406_Tabanus_fairchildi_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258406_Tabanus_fairchildi_ht_face_lateral_screen.jpg",
+      "place": "Taghanic [Taughannock], Ithaca, Tompkins, New York, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150673",
+      "title": "Chrysops parvulus",
+      "date": "1900s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258464_chrysops_parvulus_dorsalhab_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258464_chrysops_parvulus_dorsalhab_sl_thumb",
+      "filename": "NMNH-USNMENT00258464_chrysops_parvulus_dorsalhab_sl_screen.jpg",
+      "place": "Barber, Middlesex, New Jersey, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152231",
+      "title": "Tabanus ardalus",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258368_tabanus_ardalus_75_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258368_tabanus_ardalus_75_thumb",
+      "filename": "NMNH-USNMENT00258368_tabanus_ardalus_75_screen.jpg",
+      "place": "Thailand, takban tafui, Tak, Thailand"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150632",
+      "title": "Chrysops zinzala",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258526_chrysops_zinzala_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258526_chrysops_zinzala_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258526_chrysops_zinzala_anteriorhead_sl_screen.jpg",
+      "place": "Shippigan, New Brunswick, Canada"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150635",
+      "title": "Dasybasis poroma",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT258472_dasybasis_poroma_dorsalhab_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT258472_dasybasis_poroma_dorsalhab_sl_thumb",
+      "filename": "NMNH-USNMENT258472_dasybasis_poroma_dorsalhab_sl_screen.jpg",
+      "place": "Poroma, [Not Stated]"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150636",
+      "title": "Esenbeckia weemsi",
+      "date": "1960s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258522_Esenbeckia_weemsi_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258522_Esenbeckia_weemsi_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258522_Esenbeckia_weemsi_ht_face_lateral_screen.jpg",
+      "place": "El Palmito on rt. 40, Sinaloa, Mexico"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9208968",
+      "title": "Hybomitra nola",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258459_Hybomitra_nola_ht_face_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258459_Hybomitra_nola_ht_face_lateral_thumb",
+      "filename": "NMNH-USNMENT00258459_Hybomitra_nola_ht_face_lateral_screen.jpg",
+      "place": "Yachow; Szechwan; China, Sichuan, China"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9205129",
+      "title": "Mesopangonius philipi",
+      "date": "1980s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258469_Mesopangonius_philipi_ht_lateral_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258469_Mesopangonius_philipi_ht_lateral_thumb",
+      "filename": "NMNH-USNMENT00258469_Mesopangonius_philipi_ht_lateral_screen.jpg",
+      "place": "Kinabalu National Park, Headquarters Area, Sabah, Malaysia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9146889",
+      "title": "Goniops hippoboscoides",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT258425_goniops_hippoboscoides_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT258425_goniops_hippoboscoides_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT258425_goniops_hippoboscoides_anteriorhead_sl_screen.jpg",
+      "place": "[Not Stated], Pennsylvania, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9144097",
+      "title": "Chrysops vitripennis",
+      "date": "1910s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258520_chrysops_vitripennis_anteriorhead2_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258520_chrysops_vitripennis_anteriorhead2_sl_thumb",
+      "filename": "NMNH-USNMENT00258520_chrysops_vitripennis_anteriorhead2_sl_screen.jpg",
+      "place": "Beltsville, Prince George's, Maryland, United States"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150672",
+      "title": "Chrysops indiana thailandensis",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258429_chrysops_indiana_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258429_chrysops_indiana_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258429_chrysops_indiana_anteriorhead_sl_screen.jpg",
+      "place": "Chiengmai, Chiang Mai, Thailand"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9150663",
+      "title": "Tabanus thurmani",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258505_tabanus_thurmani_anteriorhead_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258505_tabanus_thurmani_anteriorhead_sl_thumb",
+      "filename": "NMNH-USNMENT00258505_tabanus_thurmani_anteriorhead_sl_screen.jpg",
+      "place": "Chiengmai, Chiang Mai, Thailand"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148227",
+      "title": "Haematopota biorbis",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258381_haematopota_biorbis_75_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258381_haematopota_biorbis_75_sl_thumb",
+      "filename": "NMNH-USNMENT00258381_haematopota_biorbis_75_sl_screen.jpg",
+      "place": "Trang bom; 30 mi nw. of Saigon, [Not Stated], Vietnam"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152230",
+      "title": "Tabanus annamensis",
+      "date": "1930s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258365_tabanus_annamensis_75_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258365_tabanus_annamensis_75_sl_thumb",
+      "filename": "NMNH-USNMENT00258365_tabanus_annamensis_75_sl_screen.jpg",
+      "place": "Annam - Prov.; Haut Donai; Col de Blao.; alt. 900m, Annam, Vietnam"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152586",
+      "title": "Tabanus (Pseudobolbodimyia) abbasalis",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258354_tabanus_abbasalis_75_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258354_tabanus_abbasalis_75_sl_thumb",
+      "filename": "NMNH-USNMENT00258354_tabanus_abbasalis_75_sl_screen.jpg",
+      "place": "Chiegmai, thai, Chiang Mai, Thailand"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9152225",
+      "title": "Tabanus anabates",
+      "date": "1950s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258362_tabanus_anabates_75_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258362_tabanus_anabates_75_sl_thumb",
+      "filename": "NMNH-USNMENT00258362_tabanus_anabates_75_sl_screen.jpg",
+      "place": "Lampang, Tern, Lampang, Thailand"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9148228",
+      "title": "Haematopota clarkeana",
+      "date": "1960s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258394_haematopota_clarkeana_dorsalhab_sl_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258394_haematopota_clarkeana_dorsalhab_sl_thumb",
+      "filename": "NMNH-USNMENT00258394_haematopota_clarkeana_dorsalhab_sl_screen.jpg",
+      "place": "Bako National Park, Sarawak, Malaysia"
+    },
+    {
+      "objectID": "edanmdm-nmnhentomology_9144697",
+      "title": "Tabanus gracilipalpis",
+      "date": "1920s",
+      "primaryImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258567_tabanus_gracilipalpis_75_screen",
+      "thumbnailImage": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258567_tabanus_gracilipalpis_75_thumb",
+      "filename": "NMNH-USNMENT00258567_tabanus_gracilipalpis_75_screen.jpg",
+      "place": "Camp 334 near Fairbanks, Alaskan Engineering Comission, Fairbanks North Star, Alaska, United States"
+    }
+  ]

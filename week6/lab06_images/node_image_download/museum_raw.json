@@ -1,0 +1,432 @@
+// 20201026205527
+// https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmnhentomology_9143749?api_key=qEIgONMDA9l4wPFA864Vvldpm2tfKzD2LJtAELFK
+
+{
+    "status": 200,
+    "responseCode": 1,
+    "response": {
+      "id": "edanmdm-nmnhentomology_9143749",
+      "title": "Tabanus hookeri",
+      "unitCode": "NMNHENTO",
+      "type": "edanmdm",
+      "url": "edanmdm:nmnhentomology_9143749",
+      "content": {
+        "descriptiveNonRepeating": {
+          "record_ID": "nmnhentomology_9143749",
+          "online_media": {
+            "mediaCount": 7,
+            "media": [
+              {
+                "thumbnail": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3121ad5301a314e12a8dc2c437a03c514/90",
+                "idsId": "ark:/65665/m3121ad5301a314e12a8dc2c437a03c514",
+                "usage": {
+                  "access": "CC0"
+                },
+                "guid": "http://n2t.net/ark:/65665/m3121ad530-1a31-4e12-a8dc-2c437a03c514",
+                "type": "Images",
+                "content": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3121ad5301a314e12a8dc2c437a03c514",
+                "resources": [
+                  {
+                    "label": "High-resolution TIFF",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_anteriorhead_sl.tif"
+                  },
+                  {
+                    "label": "High-resolution JPEG (1024x1024)",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_anteriorhead_sl.jpg"
+                  },
+                  {
+                    "label": "Screen Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_anteriorhead_sl_screen"
+                  },
+                  {
+                    "label": "Thumbnail Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_anteriorhead_sl_thumb"
+                  }
+                ]
+              },
+              {
+                "thumbnail": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m38d0d3acb969a49ef852f52410b593f3f/90",
+                "idsId": "ark:/65665/m38d0d3acb969a49ef852f52410b593f3f",
+                "usage": {
+                  "access": "CC0"
+                },
+                "guid": "http://n2t.net/ark:/65665/m38d0d3acb-969a-49ef-852f-52410b593f3f",
+                "type": "Images",
+                "content": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m38d0d3acb969a49ef852f52410b593f3f",
+                "resources": [
+                  {
+                    "label": "High-resolution TIFF",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_doraslhab_sl.tif"
+                  },
+                  {
+                    "label": "High-resolution JPEG (1360x1360)",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_doraslhab_sl.jpg"
+                  },
+                  {
+                    "label": "Screen Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_doraslhab_sl_screen"
+                  },
+                  {
+                    "label": "Thumbnail Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_doraslhab_sl_thumb"
+                  }
+                ]
+              },
+              {
+                "thumbnail": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m363b1cbd4a78c44d3a90419d38b0c408f/90",
+                "idsId": "ark:/65665/m363b1cbd4a78c44d3a90419d38b0c408f",
+                "usage": {
+                  "access": "CC0"
+                },
+                "guid": "http://n2t.net/ark:/65665/m363b1cbd4-a78c-44d3-a904-19d38b0c408f",
+                "type": "Images",
+                "content": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m363b1cbd4a78c44d3a90419d38b0c408f",
+                "resources": [
+                  {
+                    "label": "High-resolution TIFF",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_lateralhab_sl.tif"
+                  },
+                  {
+                    "label": "High-resolution JPEG (1360x1360)",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_lateralhab_sl.jpg"
+                  },
+                  {
+                    "label": "Screen Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_lateralhab_sl_screen"
+                  },
+                  {
+                    "label": "Thumbnail Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_lateralhab_sl_thumb"
+                  }
+                ]
+              },
+              {
+                "thumbnail": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3287076ce099b441caa74641ea12efcc4/90",
+                "idsId": "ark:/65665/m3287076ce099b441caa74641ea12efcc4",
+                "usage": {
+                  "access": "CC0"
+                },
+                "guid": "http://n2t.net/ark:/65665/m3287076ce-099b-441c-aa74-641ea12efcc4",
+                "type": "Images",
+                "content": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3287076ce099b441caa74641ea12efcc4",
+                "resources": [
+                  {
+                    "label": "High-resolution TIFF",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_Ldorsalwing_sl.tif"
+                  },
+                  {
+                    "label": "High-resolution JPEG (1360x1360)",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_Ldorsalwing_sl.jpg"
+                  },
+                  {
+                    "label": "Screen Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_Ldorsalwing_sl_screen"
+                  },
+                  {
+                    "label": "Thumbnail Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_Ldorsalwing_sl_thumb"
+                  }
+                ]
+              },
+              {
+                "thumbnail": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3636f0e395e254728a4ba5401da8addad/90",
+                "idsId": "ark:/65665/m3636f0e395e254728a4ba5401da8addad",
+                "usage": {
+                  "access": "CC0"
+                },
+                "guid": "http://n2t.net/ark:/65665/m3636f0e39-5e25-4728-a4ba-5401da8addad",
+                "type": "Images",
+                "content": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3636f0e395e254728a4ba5401da8addad",
+                "resources": [
+                  {
+                    "label": "High-resolution TIFF",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_ventralhab_sl.tif"
+                  },
+                  {
+                    "label": "High-resolution JPEG (1360x1360)",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_ventralhab_sl.jpg"
+                  },
+                  {
+                    "label": "Screen Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_ventralhab_sl_screen"
+                  },
+                  {
+                    "label": "Thumbnail Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_ventralhab_sl_thumb"
+                  }
+                ]
+              },
+              {
+                "thumbnail": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m385fb4d62facc4d6f8e7239a626fa6a9d/90",
+                "idsId": "ark:/65665/m385fb4d62facc4d6f8e7239a626fa6a9d",
+                "usage": {
+                  "access": "CC0"
+                },
+                "guid": "http://n2t.net/ark:/65665/m385fb4d62-facc-4d6f-8e72-39a626fa6a9d",
+                "type": "Images",
+                "content": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m385fb4d62facc4d6f8e7239a626fa6a9d",
+                "resources": [
+                  {
+                    "label": "High-resolution TIFF",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_75.tif"
+                  },
+                  {
+                    "label": "High-resolution JPEG (1360x1360)",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_75.jpg"
+                  },
+                  {
+                    "label": "Screen Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_75_screen"
+                  },
+                  {
+                    "label": "Thumbnail Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_75_thumb"
+                  }
+                ]
+              },
+              {
+                "thumbnail": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3e79ccce81cec460f878d475cc97d54a5/90",
+                "idsId": "ark:/65665/m3e79ccce81cec460f878d475cc97d54a5",
+                "usage": {
+                  "access": "CC0"
+                },
+                "guid": "http://n2t.net/ark:/65665/m3e79ccce8-1cec-460f-878d-475cc97d54a5",
+                "type": "Images",
+                "content": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3e79ccce81cec460f878d475cc97d54a5",
+                "resources": [
+                  {
+                    "label": "High-resolution TIFF",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_label1.tif"
+                  },
+                  {
+                    "label": "High-resolution JPEG (1224x1224)",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_label1.jpg"
+                  },
+                  {
+                    "label": "Screen Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_label1_screen"
+                  },
+                  {
+                    "label": "Thumbnail Image",
+                    "url": "https://ids.si.edu/ids/download?id=NMNH-USNMENT00258426_tabanus_hookeri_label1_thumb"
+                  }
+                ]
+              }
+            ]
+          },
+          "guid": "http://n2t.net/ark:/65665/3685d1753-5a15-490a-83b6-bca2d01eb77a",
+          "title_sort": "TABANUS HOOKERI",
+          "unit_code": "NMNHENTO",
+          "record_link": "http://n2t.net/ark:/65665/3685d1753-5a15-490a-83b6-bca2d01eb77a",
+          "title": {
+            "label": "title",
+            "content": "Tabanus hookeri"
+          },
+          "metadata_usage": {
+            "access": "CC0"
+          },
+          "data_source": "NMNH - Entomology Dept."
+        },
+        "indexedStructured": {
+          "date": [
+            "1910s"
+          ],
+          "object_type": [
+            "Holotypes",
+            "Taxonomic type specimens"
+          ],
+          "tax_class": [
+            "Insecta"
+          ],
+          "tax_kingdom": [
+            "Animalia"
+          ],
+          "scientific_name": [
+            "Tabanus hookeri Knab, 1915",
+            "Tabanus claripennis"
+          ],
+          "tax_family": [
+            "Tabanidae"
+          ],
+          "tax_phylum": [
+            "Arthropoda"
+          ],
+          "geoLocation": [
+            {
+              "L2": {
+                "type": "Country",
+                "content": "United States"
+              },
+              "L3": {
+                "type": "State",
+                "content": "Puerto Rico"
+              },
+              "L4": {
+                "type": "County",
+                "content": "Mayagüez"
+              },
+              "points": {
+                "point": {
+                  "latitude": {
+                    "type": "decimal",
+                    "content": "18.2011"
+                  },
+                  "longitude": {
+                    "type": "decimal",
+                    "content": "-67.1397"
+                  }
+                }
+              },
+              "Other": {
+                "type": "Locality",
+                "content": "Mayagüez"
+              }
+            }
+          ],
+          "tax_order": [
+            "Diptera"
+          ],
+          "name": [
+            "C. W. Hooker"
+          ],
+          "topic": [
+            "Insects"
+          ],
+          "place": [
+            "Puerto Rico",
+            "United States",
+            "Mayagüez"
+          ],
+          "online_media_type": [
+            "Images",
+            "Specimen labels"
+          ]
+        },
+        "freetext": {
+          "date": [
+            {
+              "label": "Collection Date",
+              "content": "9 Jan 1912"
+            }
+          ],
+          "setName": [
+            {
+              "label": "See more items in",
+              "content": "Entomology Types"
+            }
+          ],
+          "identifier": [
+            {
+              "label": "Barcode",
+              "content": "USNMENT00258426"
+            },
+            {
+              "label": "Other Numbers",
+              "content": "Inquire SerNum : 44207"
+            },
+            {
+              "label": "Other Numbers",
+              "content": "USNM Type Number : 19354"
+            },
+            {
+              "label": "USNM Number",
+              "content": "USNMENT258426"
+            }
+          ],
+          "notes": [
+            {
+              "label": "Notes",
+              "content": "[Label 1] Tbanus hookeri Knab; [Label 2] Type No. 19354 U.S.N.M.; [Label 3] P. R. 95; [Label 4] CWHooker Collector; [Label 5] Mayaguez, P.R. I.9.1912"
+            },
+            {
+              "label": "Notes",
+              "content": "Eyes bare in the female, hairy in the male. Abdomen dorsally with three longitudinal series of pale markings. Wings clear, the posterior cells all widely open, the upper branch of the third vein not appendiculate. Female: General color brownish gray. Frons broad, narrowing gradually toward the antennre, yellowish gray; frontal callosity brown, roughly quadrate, as broad as high and con- tiguous with eyes, a narrow connected line reaching about one-third the way to occiput. Antenna:: bright ferruginous; first joint with the dorsal apex black and with many short black hairs; third joint dorsally with a prominent but obtruse basal process, its apex and the annulate part of the joint black. Palpi yellowish white, with a few scattered black hairs. Face and cheeks clothed with white pollen and hair. Thorax dor- sally dark gray and yellowish brown, the latter color mostly laterally and in two narrow subdorsal stripes; scutellum yellow brown tinged with gray; pleura: grayish white and clothed with white hair; disk of thorax and scutellum clothed with white hair scales and fine black hairs. Abdomen dorsally blackish brown, a median series of yellowish brown contigu- ous triangular spots, narrow on anterior margins and broad- ened to posterior margins; on each side, half-way toward lat- eral margins, a series of broad oblique bars of the same color, touching both anterior and posterior margins of the segments, but not the lateral margins; extreme lateral margins with a narrow continuous brownish yellow stripe; the pale markings are overlaid with whitish hair-scales j venter pale ferruginous, tinted with pale gray at the sides, the seventh segment with short erect black bristles. Legs pale ferruginous, with pale gray pruinosity and whitish down, the anterior and middle cox'\" dark, the front tibi\", blackened from just beyond the middle; tarsi blackish. Wings hyaline, the stigma long and brownish yellow. Halteres pale ferruginous, with creamy white knobs. The eyes show traces of two transverse pur- plish stripes. Length: Body, about 11 mm.; wing 9 mm."
+            },
+            {
+              "label": "Record Last Modified",
+              "content": "1 Mar 2016"
+            },
+            {
+              "label": "Specimen Count",
+              "content": "1"
+            }
+          ],
+          "name": [
+            {
+              "label": "Biogeographical Region",
+              "content": "Neotropical"
+            },
+            {
+              "label": "Collector",
+              "content": "C. W. Hooker"
+            }
+          ],
+          "publisher": [
+            {
+              "label": "Published Name",
+              "content": "Tabanus hookeri Knab, 1915"
+            },
+            {
+              "label": "Published Name",
+              "content": "Tabanus claripennis"
+            }
+          ],
+          "place": [
+            {
+              "label": "Place",
+              "content": "Mayagüez, Puerto Rico, United States"
+            }
+          ],
+          "physicalDescription": [
+            {
+              "label": "Prep Count",
+              "content": "1"
+            },
+            {
+              "label": "Preparation",
+              "content": "Pinned"
+            },
+            {
+              "label": "Remarks",
+              "content": "Holotype"
+            },
+            {
+              "label": "Sex",
+              "content": "Female"
+            },
+            {
+              "label": "Stage",
+              "content": "Adult"
+            }
+          ],
+          "dataSource": [
+            {
+              "label": "Data Source",
+              "content": "NMNH - Entomology Dept."
+            }
+          ],
+          "taxonomicName": [
+            {
+              "label": "Taxonomy",
+              "content": "Animalia, Arthropoda, Insecta, Diptera, Brachycera, Tabanidae, Tabaninae"
+            }
+          ],
+          "objectType": [
+            {
+              "label": "Type Citation",
+              "content": "1915. Insecutor Inscit. Menstr. 3: 48."
+            },
+            {
+              "label": "Type Status",
+              "content": "Holotype"
+            }
+          ]
+        }
+      },
+      "hash": "26f0b6d877464663acade0d10fe848b7dd6ad1ba",
+      "docSignature": "9d8ff9fcc0e56cb75f617e9b02587ebd83b10fa8_ddac26648a2540bc8dae06099ba993ba",
+      "timestamp": "1599560542",
+      "lastTimeUpdated": "1599560516",
+      "version": ""
+    }
+  }

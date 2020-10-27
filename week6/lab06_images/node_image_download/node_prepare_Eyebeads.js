@@ -23,7 +23,7 @@ const API_KEY = process.env.API_KEY;
 // endpoint URL
 const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
 // our search term
-const search =  `portraits AND unit_code:"FSG" AND online_media_type:"Images"`;
+const search =  `eye jewelry AND unit_code:"FSG" AND online_media_type:"Images"`;
 // url we'll use to make our call
 const url = `${searchBaseURL}?api_key=${API_KEY}&q=${search}`
 
@@ -70,14 +70,16 @@ function fetchUrl(searchAllURL){
     let objects = obj.response.rows.filter(data => {
       return data.content.descriptiveNonRepeating.online_media.media[0].resources != undefined && data.content.indexedStructured.date != undefined
     }).map((data) => {
-      let filename = data.content.descriptiveNonRepeating.online_media.media[0].resources[1].url.split('=').pop();
+      let filename = data.content.descriptiveNonRepeating.online_media.media[0].resources[2].url.split('=').pop();
 
       return { 
         objectID: data.id,
         title: data.title,
         date: data.content.indexedStructured.date[0],
-        primaryImage: data.content.descriptiveNonRepeating.online_media.media[0].resources[1].url,
-        filename: filename.includes(".jpg") ? filename : filename + ".jpg" // if the filename we defined above doesn't include .jpg add it at the end
+        primaryImage: data.content.descriptiveNonRepeating.online_media.media[0].resources[2].url,
+        thumbnailImage: data.content.descriptiveNonRepeating.online_media.media[0].resources[3].url,
+        filename: filename.includes(".jpg") ? filename : filename + ".jpg", // if the filename we defined above doesn't include .jpg add it at the end
+        place: data.content.freetext.place[0].content
       }
     })
 
@@ -94,5 +96,5 @@ fetchSearchData(url);
 // // the function inside the setTimeout saves myResults to a JSON
 // // it will automatically run after 5000 ms
 setTimeout(() => {
-    fs.writeFileSync('./data.json', JSON.stringify(myArray), 'utf8')
+    fs.writeFileSync('./eyes_eyebeads_data.json', JSON.stringify(myArray), 'utf8')
 }, 5000)
