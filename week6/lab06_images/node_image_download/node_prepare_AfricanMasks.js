@@ -76,9 +76,9 @@ function fetchUrl(searchAllURL){
         objectID: data.id,
         title: data.title,
         date: data.content.indexedStructured.date[0],
-        primaryImage: data.content.descriptiveNonRepeating.online_media.media[0].resources[2].url,
+        primaryImage: data.content.descriptiveNonRepeating.online_media.media[0].resources[1].url,
         // thumbnailImage: data.content.descriptiveNonRepeating.online_media.media[0].resources[3].url,
-        filename: filename.includes(".jpg") ? filename : filename + ".jpg", // if the filename we defined above doesn't include .jpg add it at the end
+        filename: filename.includes(".jpg") ? filename : filename + ".jpg" // if the filename we defined above doesn't include .jpg add it at the end
       }
     })
 
