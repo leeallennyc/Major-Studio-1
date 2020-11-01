@@ -4,7 +4,7 @@ const fs = require('fs');
 // load a default library that lets us make HTTP requests (like calls to an API)
 const request = require('request');
 // the folder we will write into, make sure the folder is in your directory
-let folder = "downloads_thumbnail_eye-amulet";
+let folder = "downloads_screen_africanmasks";
 // download the image by url, name the file by filename
 function downloadImage(uri, filename, callback){
   request.head(uri, function(err, res, body){
@@ -15,12 +15,12 @@ function downloadImage(uri, filename, callback){
 };
 // go through the json we created before
 function downloadData() {
-  fs.readFile("./eyes_amulet_data.json", "utf8", (err, data) => {
+  fs.readFile("./eyes_african_masks_data.json", "utf8", (err, data) => {
     if (err) console.log(err);
     JSON.parse(data).forEach(e => {
       console.log('Downloading ' + e.filename);
       setTimeout(() => {
-        downloadImage(e.thumbnailImage, e.filename, function(){
+        downloadImage(e.primaryImage, e.filename, function(){
           console.log('Finished Downloading ' + e.filename);
         });
       }, 1000 * parseInt(Math.random(1, 5)))
