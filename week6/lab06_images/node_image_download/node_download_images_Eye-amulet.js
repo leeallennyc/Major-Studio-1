@@ -15,7 +15,7 @@ function downloadImage(uri, filename, callback){
 };
 // go through the json we created before
 function downloadData() {
-  fs.readFile("./eyes_amulet_FSG_data.json", "utf8", (err, data) => {
+  fs.readFile("./eyes_amulet_data.json", "utf8", (err, data) => {
     if (err) console.log(err);
     JSON.parse(data).forEach(e => {
       console.log('Downloading ' + e.filename);

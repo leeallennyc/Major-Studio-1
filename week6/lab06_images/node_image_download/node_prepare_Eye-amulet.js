@@ -23,7 +23,7 @@ const API_KEY = process.env.API_KEY;
 // endpoint URL
 const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
 // our search term
-const search =  `native american AND unit_code:"NPG" AND online_media_type:"Images" `;
+const search =  `Egypt unit_code:"SAAM" AND online_media_type:"Images"`;
 // url we'll use to make our call
 const url = `${searchBaseURL}?api_key=${API_KEY}&q=${search}`
 
@@ -48,7 +48,7 @@ function fetchSearchData(url) {
       } else {
         searchAllURL = url + `&start=${i * pageSize}&rows=${pageSize}`;
       }
-
+      
       fetchUrl(searchAllURL);
     }
   })
@@ -68,36 +68,17 @@ function fetchUrl(searchAllURL){
     // first we filter out the objects that do not have the information we need (change accordingly)
     // after the objects are filtered, we map our objects and construct a new object
     let objects = obj.response.rows.filter(data => {
-
-    // by default we assume we have complete data
-    dataComplete = true;
-        
-    // Test if images exist
-    if(data.content.descriptiveNonRepeating.online_media ==undefined
-      || data.content.descriptiveNonRepeating.online_media.media ==undefined
-      ||  data.content.descriptiveNonRepeating.online_media.media[0] ==undefined
-      || data.content.descriptiveNonRepeating.online_media.media[0].resources ==undefined
-      || data.content.descriptiveNonRepeating.online_media.media[0].resources[1] ==undefined
-    )dataComplete = false;
-
-      // Test if we have a date value
-      // if(data.content.indexedStructured.date ==undefined)dataComplete=false;
-
-      return dataComplete;
-
+      return data.content.descriptiveNonRepeating.online_media != undefined && data.content.indexedStructured.date != undefined
     }).map((data) => {
-      
-      let filename = data.content.descriptiveNonRepeating.online_media.media[0].resources[1].url.split('=').pop();
+      let filename = data.content.descriptiveNonRepeating.online_media.media[0].resources[2].url.split('=').pop();
 
       return { 
         objectID: data.id,
         title: data.title,
-        artist: data.content.freetext.name[0].content,
         date: data.content.indexedStructured.date[0],
-        screenjpg: data.content.descriptiveNonRepeating.online_media.media[0].resources[2].url,
-        thumbnailjpg: data.content.descriptiveNonRepeating.online_media.media[0].resources[3].url,
-        identifier: data.content.freetext.identifier[0].content,
-        filename: filename.includes(".jpg") ? filename : filename + ".jpg" // if the filename we defined above doesn't include .jpg add it at the end
+        primaryImage: data.content.descriptiveNonRepeating.online_media.media[0].resources[2].url,
+        thumbnailImage: data.content.descriptiveNonRepeating.online_media.media[0].resources[3].url,
+        filename: filename.includes(".jpg") ? filename : filename + ".jpg", // if the filename we defined above doesn't include .jpg add it at the end
       }
     })
 
@@ -114,5 +95,5 @@ fetchSearchData(url);
 // // the function inside the setTimeout saves myResults to a JSON
 // // it will automatically run after 5000 ms
 setTimeout(() => {
-    fs.writeFileSync('./eyes_nativeamericans_data.json', JSON.stringify(myArray), 'utf8')
+    fs.writeFileSync('./eyes_amulet_data.json', JSON.stringify(myArray), 'utf8')
 }, 5000)
