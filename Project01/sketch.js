@@ -1,8 +1,8 @@
 let img; // Declare variable 'img'.
 
 function setup() {
-  createCanvas(1950, 1100);
-  img = loadImage('sketches/Representing_Eye_Color.png'); // Load the image
+  createCanvas(2000, 1100);
+  img = loadImage('Representing_Eye_Color.png'); // Load the image
 }
 function draw() {
     // Displays the image at its actual size at point (0,0)
