@@ -3,7 +3,7 @@ let img;
 
 function setup() {
   createCanvas(2500,1100);
-  img = loadImage('https://github.com/leeallennyc/Major-Studio-1/blob/master/Project01/Representing_Eye_Color.png'); // Load the image
+  img = loadImage('Representing_Eye_Color.png'); // Load the image
 }
 
 function draw() {
