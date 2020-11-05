@@ -194,7 +194,7 @@ function displayfullImages(json){
 
 <img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project02/process_documentation/image%20board_setup.png" width=75% height=75%>
 
-* The current flow uses allows for ~17 of the 50 cropped eye images to be explored, using Adobe XD to connect the flows:
+* The current flow used allows for ~17 of the 50 cropped eye images to be explored, using Adobe XD to connect the flows:
 <img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project02/process_documentation/Connecting_the_dots.png" width=75% height=75%>
 
 * A sketch of a macro level timeline is also here, which will allow the viewer to explore across various collections and time: 
