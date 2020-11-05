@@ -1,13 +1,21 @@
-let img; // Declare variable 'img'.
+let img;
+
 
 function setup() {
-  createCanvas(2000, 1100);
-  img = loadImage('Representing_Eye_Color.png'); // Load the image
+  createCanvas(2500,1100);
+  img = loadImage('https://github.com/leeallennyc/Major-Studio-1/blob/master/Project01/Representing_Eye_Color.png'); // Load the image
 }
+
 function draw() {
-    // Displays the image at its actual size at point (0,0)
-    image(img, 0, 0);
-  }
+  // Displays the image at its actual size at point (0,0)
+  // image(img, 0, 0);
+  // Displays the image at point (0, height/2) at half size
+  image(img, 0, height / 2, img.width / 2, img.height / 2);
+}
+
+
+
+
 
 
 
