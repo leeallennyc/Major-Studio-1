@@ -22,6 +22,7 @@ The purpose of the project is to qualitatively represent data using information 
 I've chosen to look across various collections at the Smithsonian to better understand the "Eyes of the Smithsonian".
 
 The GitHub Repo and README.md is [HERE](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/docs/Project02)
+An interactive sketch is [HERE](https://xd.adobe.com/view/3d235312-357d-45a6-b08f-6d6a5864ec04-6870/?fullscreen)
 
 ---
 ### [Project 3 - Interactive Visualization](https://leeallennyc.github.io/Major-Studio-1/Project03/)
