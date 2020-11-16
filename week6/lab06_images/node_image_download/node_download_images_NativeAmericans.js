@@ -21,6 +21,7 @@ function downloadData() {
       console.log('Downloading ' + e.filename);
       setTimeout(() => {
         downloadImage(e.primaryImage, e.filename, function(){
+        downloadImage(e.screenjpg, e.filename, function(){
           console.log('Finished Downloading ' + e.filename);
         });
       }, 1000 * parseInt(Math.random(1, 5)))

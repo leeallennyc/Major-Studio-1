@@ -1,0 +1,222 @@
+{
+    "status": 200,
+    "responseCode": 1,
+    "response": {
+      "id": "edanmdm-npg_NPG.99.167.2",
+      "title": "Red Jacket",
+      "unitCode": "NPG",
+      "type": "edanmdm",
+      "url": "edanmdm:npg_NPG.99.167.2",
+      "content": {
+        "descriptiveNonRepeating": {
+          "record_ID": "npg_NPG.99.167.2",
+          "online_media": {
+            "mediaCount": 1,
+            "media": [
+              {
+                "thumbnail": "https://ids.si.edu/ids/deliveryService?id=NPG-NPG_99_167_2RedJacket-000001",
+                "idsId": "NPG-NPG_99_167_2RedJacket-000001",
+                "usage": {
+                  "access": "CC0"
+                },
+                "guid": "http://n2t.net/ark:/65665/tr2a25555c6-de00-4202-8a73-f07ec91bb99b",
+                "type": "Images",
+                "content": "https://ids.si.edu/ids/deliveryService?id=NPG-NPG_99_167_2RedJacket-000001",
+                "resources": [
+                  {
+                    "label": "High-resolution TIFF",
+                    "url": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_2RedJacket-000001.tif"
+                  },
+                  {
+                    "label": "High-resolution JPEG (2740x2740)",
+                    "url": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_2RedJacket-000001.jpg"
+                  },
+                  {
+                    "label": "Screen Image",
+                    "url": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_2RedJacket-000001_screen"
+                  },
+                  {
+                    "label": "Thumbnail Image",
+                    "url": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_2RedJacket-000001_thumb"
+                  }
+                ]
+              }
+            ]
+          },
+          "unit_code": "NPG",
+          "title_sort": "RED JACKET",
+          "guid": "http://n2t.net/ark:/65665/sm4e13b80b9-5a6c-4f19-82b9-29592596b383",
+          "record_link": "https://npg.si.edu/object/npg_NPG.99.167.2",
+          "title": {
+            "label": "Title",
+            "content": "Red Jacket"
+          },
+          "metadata_usage": {
+            "access": "CC0"
+          },
+          "data_source": "National Portrait Gallery"
+        },
+        "indexedStructured": {
+          "date": [
+            "1830s"
+          ],
+          "object_type": [
+            "Prints"
+          ],
+          "culture": [
+            "Indians of North America",
+            "Native Americans"
+          ],
+          "name": [
+            "Red Jacket",
+            "McKenney, Thomas L.",
+            "King, Charles Bird",
+            "Corbould, Edward",
+            "Inman, Henry",
+            "Greenough, Frederick W",
+            "Hullmandel Lithography Company"
+          ],
+          "topic": [
+            "Printing",
+            "Treaty negotiator",
+            "Symbols & Motifs",
+            "Leaders",
+            "Chief",
+            "Peace medal",
+            "Men",
+            "Portraits",
+            "Orator",
+            "Medal"
+          ],
+          "online_media_type": [
+            "Images"
+          ]
+        },
+        "freetext": {
+          "setName": [
+            {
+              "label": "See more items in",
+              "content": "National Portrait Gallery Collection"
+            }
+          ],
+          "date": [
+            {
+              "label": "Date",
+              "content": "1838"
+            }
+          ],
+          "identifier": [
+            {
+              "label": "Object number",
+              "content": "NPG.99.167.2"
+            }
+          ],
+          "creditLine": [
+            {
+              "label": "Credit Line",
+              "content": "National Portrait Gallery, Smithsonian Institution; gift of Betty A. and Lloyd G. Schermer"
+            }
+          ],
+          "name": [
+            {
+              "label": "Artist",
+              "content": "Edward Corbould, 1815 - 1905"
+            },
+            {
+              "label": "Copy after",
+              "content": "Henry Inman, 28 Oct 1801 - 17 Jan 1846"
+            },
+            {
+              "label": "Copy after",
+              "content": "Charles Bird King, 26 Sep 1785 - 18 Mar 1862"
+            },
+            {
+              "label": "Lithographer",
+              "content": "Hullmandel Lithography Company"
+            },
+            {
+              "label": "Publisher",
+              "content": "Frederick W. Greenough, active c. 1838"
+            },
+            {
+              "label": "Publication",
+              "content": "Thomas L. McKenney and James Hall's History of the Indian Tribes of North America, 3 vols., Philadelphia, 1837 - 1844"
+            },
+            {
+              "label": "Sitter",
+              "content": "Red Jacket, c. 1758 - 20 Jan 1830"
+            }
+          ],
+          "topic": [
+            {
+              "label": "Topic",
+              "content": "Symbols & Motifs\\Medal\\Peace medal"
+            },
+            {
+              "label": "Topic",
+              "content": "Print"
+            },
+            {
+              "label": "Topic",
+              "content": "Red Jacket: Male"
+            },
+            {
+              "label": "Topic",
+              "content": "Red Jacket: Native American\\Orator"
+            },
+            {
+              "label": "Topic",
+              "content": "Red Jacket: Native American\\Leader\\Chief"
+            },
+            {
+              "label": "Topic",
+              "content": "Red Jacket: Native American\\Treaty negotiator"
+            },
+            {
+              "label": "Topic",
+              "content": "Portrait"
+            }
+          ],
+          "title": [
+            {
+              "label": "Alternate Title",
+              "content": "Sagoyewatha"
+            }
+          ],
+          "physicalDescription": [
+            {
+              "label": "Medium",
+              "content": "Hand-colored lithograph on paper"
+            },
+            {
+              "label": "Dimensions",
+              "content": "Image: 50.2 x 35cm (19 3/4 x 13 3/4\")"
+            }
+          ],
+          "dataSource": [
+            {
+              "label": "Data Source",
+              "content": "National Portrait Gallery"
+            }
+          ],
+          "objectRights": [
+            {
+              "label": "Restrictions & Rights",
+              "content": "CC0"
+            }
+          ],
+          "objectType": [
+            {
+              "label": "Type",
+              "content": "Print"
+            }
+          ]
+        }
+      },
+      "hash": "b3b35313cd508e3623243cdad50f594f9f4d8299",
+      "docSignature": "55d3b55ca2b54b6bbc1749fc83a25b850a750cb7_ae47d2dc30b78ca89d04177d592b9ab3",
+      "timestamp": "1600763560",
+      "lastTimeUpdated": "1600763543",
+      "version": ""
+    }
+  }

@@ -48,7 +48,7 @@ function fetchSearchData(url) {
       } else {
         searchAllURL = url + `&start=${i * pageSize}&rows=${pageSize}`;
       }
-      
+
       fetchUrl(searchAllURL);
     }
   })
@@ -68,13 +68,30 @@ function fetchUrl(searchAllURL){
     // first we filter out the objects that do not have the information we need (change accordingly)
     // after the objects are filtered, we map our objects and construct a new object
     let objects = obj.response.rows.filter(data => {
-      return data.content.descriptiveNonRepeating.online_media.media[0].resources != undefined && data.content.indexedStructured.date != undefined
+
+    // by default we assume we have complete data
+    dataComplete = true;
+        
+    // Test if images exist
+    if(data.content.descriptiveNonRepeating.online_media ==undefined
+      || data.content.descriptiveNonRepeating.online_media.media ==undefined
+      ||  data.content.descriptiveNonRepeating.online_media.media[0] ==undefined
+      || data.content.descriptiveNonRepeating.online_media.media[0].resources ==undefined
+      || data.content.descriptiveNonRepeating.online_media.media[0].resources[1] ==undefined
+    )dataComplete = false;
+
+      // Test if we have a date value
+      // if(data.content.indexedStructured.date ==undefined)dataComplete=false;
+
+      return dataComplete;
+
     }).map((data) => {
       let filename = data.content.descriptiveNonRepeating.online_media.media[0].resources[2].url.split('=').pop();
 
       return { 
         objectID: data.id,
         title: data.title,
+        artist: data.content.freetext.name[0].content,
         date: data.content.indexedStructured.date[0],
         primaryImage: data.content.descriptiveNonRepeating.online_media.media[0].resources[2].url,
         thumbnailImage: data.content.descriptiveNonRepeating.online_media.media[0].resources[3].url,
