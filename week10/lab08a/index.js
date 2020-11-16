@@ -10,6 +10,7 @@ let state = {
   data: [],
   filters: {
     menu: [],
+    menu2: [],
     checked: [],
   },
   dimensions: [window.innerWidth, window.innerHeight],
@@ -27,15 +28,20 @@ async function dataLoad() {
   
   // we also populate our checkboxes with values from the data
   const checkboxValues = Array.from(new Set(data.map(d => d[CLASS])));
+  const checkboxValues2 = Array.from(new Set(data.map(d => d[SORT_BY])));
+  console.log(checkboxValues);
+  console.log(checkboxValues2);
 
   // copy the data into the state variable, add a unique ID for each object and add the filters
   setState({
     data: data.map((d, i) => ({
       ...d,
       id: d[CLASS] + "_" + i, // each object should have a unique ID
+      id2: d[SORT_BY] + "_" + i,
     })),
     filters: {
       menu: checkboxValues,
+      menu2: checkboxValues2,
       checked: checkboxValues,
     },
   });
@@ -43,7 +49,7 @@ async function dataLoad() {
 
 // whenever state changes, update the state variable, then redraw the viz
 function setState(nextState) {
-  // console.log("state updated");
+  console.log("state updated");
   // using Object.assign keeps the state *immutable*
   state = Object.assign(state, nextState);
   draw();
