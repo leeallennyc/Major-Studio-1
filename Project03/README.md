@@ -203,6 +203,13 @@ function displayfullImages(json){
 Lastly, my goal is to create a custom layout using CSS grid, D3.js, and possibly Scrollama.js. Current iteration of the prototype can be found at this link: [Here](https://xd.adobe.com/view/3d235312-357d-45a6-b08f-6d6a5864ec04-6870/?fullscreen). 
 
 
+### Experiments with StyleGANs and scaling the number of objects.
+
+* Here I used [RunwayML](https://runwayml.com/) to train a StyleGAN to generate eyes from the collections of the Smithsonian. 
+<img src="https://github.com/leeallennyc/Major-Studio-1/tree/master/docs/Project03/process_documentation/The_Eyes_of_the_Smithsonian_GAN.jpg" width=75% height=75%>
+
+
+
 
 
 
