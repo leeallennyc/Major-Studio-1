@@ -206,7 +206,7 @@ Lastly, my goal is to create a custom layout using CSS grid, D3.js, and possibly
 ### Experiments with StyleGANs and scaling the number of objects.
 
 * Here I used [RunwayML](https://runwayml.com/) to train a StyleGAN to generate eyes from the collections of the Smithsonian. 
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/master/Project03/process_documentation/The_Eyes_of_the_Smithsonian_GAN.jpg" width=50% height=50%>
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/master/Project03/process_documentation/The_Eyes_of_the_Smithsonian_GAN.jpg" width=80% height=80%>
 
 
 
