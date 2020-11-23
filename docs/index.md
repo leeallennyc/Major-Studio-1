@@ -36,3 +36,13 @@ I've chosen to look across various collections at the Smithsonian to better unde
 
 The GitHub Repo and README.md is [HERE](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/docs/Project03)
 
+---
+### [Final](https://leeallennyc.github.io/Major-Studio-1/Final/)
+---
+### Summary:
+For this interactive visualization project we are looking at the [Smithsonian's archive](https://www.si.edu/openaccess) and [API](http://edan.si.edu/openaccess/apidocs/) through [Open Access Collections](https://collections.si.edu/search/).
+
+The purpose of this project was to create an interactive version of the The Eyes of The Smithsonian.
+
+The GitHub Repo and README.md is [HERE](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/docs/Final)
+
