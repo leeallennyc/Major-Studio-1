@@ -5,155 +5,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Global Innovation</title>
+  <title>THE EYES OF THE SMITHSONIAN</title>
+
+  <script src="/Users/leekuczewski/Desktop/The_New_School/Repos/Major-Studio-1/docs/Final/app.js"></script>
+  <link rel="stylesheet" href="style.css">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Scrollama javaScript -->
+  <script src="https://unpkg.com/intersection-observer"></script>
+  <script src="https://unpkg.com/scrollama"></script>
   
   <!-- D3 -->
   <script src="https://d3js.org/d3.v5.min.js"></script>
 
-  <!-- CSS for Scrollytelling -->
-  <style>
-    body  {
-      background-color: black;
-    }
-    /* smooth creates a rewind / speed up effect when jumping between sections of the page */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    h4 {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      color: floralwhite;
-      opacity: .8;
-    }
-
-    .main {
-      /* overflow-scrolling enables momentum-based scrolling on touch devices. This allows the user to use their fingers less on touch devices  */
-      -webkit-overflow-scrolling: touch;
-      /* 'transform' is included to ensure z-index works properly on all kinds of devices */
-      transform: translate3d(0, 0, 0); 
-    }
-
-    #scrollytelling {
-      /* 'position:relative' allows the scrollytelling section to be positioned in a custom way */
-      position: relative;
-      /* OPTIONAL: you can choose any background color */
-      background-color: white; 
-      /* OPTIONAL: padding is used to create space between on the edges of the story*/
-      padding: 1rem;
-    }
-
-
-    article {
-      /* 'position:relative' allows the article section to be positioned in a custom way */
-      position: relative;
-      /* 'max-width' sets how wide each step's the text comes up on the screen */
-      max-width: 55rem;
-      /* 'OPTIONAL: margin-top' sets how much space there is between the the figure and the first message.*/
-      margin-top: 0;
-      /* 'margin-left:auto' and 'margin-right:auto' centers the article on the page.*/
-      margin-left: auto;
-      margin-right: auto;
-      /* 'transform' is included to ensure z-index works properly on all kinds of devices */
-      -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-
-    figure {
-      /* 'sticky' is responsible for keeping the figure centered in the page as the user scrolls */
-      position: -webkit-sticky;
-      position: sticky;
-      /* 'left' is required for 'position:sticky' to function */
-      left: 0;
-      /* 'width:100%' and 'margin:0' forces the figure to take up the maximum space. This helps with image sizing and centering*/
-      width: 100%;
-      margin: 0;
-      /*OPTIONAL: Setting the min-height prevents the figure from becoming unreadable */
-      min-height: 480px;
-      /* 'transform' is included to ensure z-index works properly on all kinds of devices */
-      -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-      /* OPTIONAL: you can choose any background color */
-      background-color: white;
-    }
-
-    figure img {
-      /* position:absolute allows us to place the images on top of one another, which allows for smooth transitioning*/
-      position: absolute;
-      left: 0;
-      /* ease-out transition creates a smooth change for the image from completely see-through, to fully visible. */
-      -webkit-transition: opacity 0.5s ease-out;
-      -moz-transition: opacity 0.5s ease-out;
-      -o-transition: opacity 0.5s ease-out;
-      transition: opacity 0.5s ease-out;
-    }
-
-    .step {
-      /* 'position relative' allows the steps to positioned in a custom way*/
-      position: relative;
-      /* margins are set to position step as high as possible, centered, and with a minimum bottom margin*/
-      margin-left: 30rem;
-    }
-
-    .step.last-child {
-      /* OPTIONAL: removes extra space at the bottom of the story*/
-      margin-bottom: 0;
-    }
-
-    .step p {
-      /* 'position relative' allows the steps to positioned in a custom way*/
-      position: relative;
-      /*OPTIONAL: creates a solid box around the text*/
-      border: 2px solid white;;
-      /*Set the border radius*/
-      border-radius: 10px;
-      /*OPTIONAL: centers the text*/
-      text-align: left;
-      /*OPTIONAL: creates space around the text*/
-      padding: 1rem;
-      /*OPTIONAL: can be set based on preferences*/
-      font-size: 1rem;
-      /*OPTIONAL: can be set based on preferences*/
-      background-color: floralwhite;
-      /* Set the Width
-      max-width: 100%; */
-      /*OPTIONAL: makes the text slightly see-through so that the figure is somewhat visible underneath*/
-      opacity: 0.80;
-    }
-
-    #mainTitle {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      color: red;
-      opacity: .80;
-    }
-
-    #link {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      color: lightgray;
-      opacity: .80;
-    }
-
-    #redlink{
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      color:red;
-      opacity: .80;
-    }
-
-
-    #mainText {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      color: gray;
-      opacity: .80;
-    }
-
-  </style>
 </head>
 
 <body>
@@ -169,15 +39,19 @@
             </div>
             <div class="col-8">
               <p><br></p>
-              <h1 style="text-align:center" id="mainTitle">Global Innovation</h1>
-              <h4 style="text-align:center">A Story of ideas</h4>
+              <h1 style="text-align:center" id="mainTitle">THE EYES OF THE SMITHSONIAN</h1>
+              <h4 style="text-align:center">A JOURNEY OF SEEING</h4>
               <p><br></p>
-              <p id="mainText">Innovation is complex, with dozens of contributing factors making it difficult to measure. Understanding both the macro and micro environments will provide us with different lenses to see the
-                entire landscape. In the graphics below we look at Global Patents, Trademarks, The Creativity and Entrepreneurship Indexes, and geography to better understand where innovation is happening, and where it might lead us next. 
-                From the mountains in Zurich, to the "Startup-Alley" of Shenzhen, innovation drives the world economy. Let this be a starting place for us to begin understanding the global ecosystem of how ideas and new forms of knowledge 
-                translate to value within the global economy. Sources are derived from the <a href="https://www.wipo.int/portal/en/index.html" id="link">The World Intellectual Property Organization</a>, <a href="https://www.uspto.gov/" id="link">USPTO</a>, 
-                <a href="https://thegedi.org/" id="link">Global Entrepreneurship & Development Institute </a>, <a href="http://martinprosperity.org/" id="link">Martin Prosperity Institute </a>, as well as others.  
-                </br></br> </br></br> </p> 
+              <p id="mainText">Seeing through the eyes of various collections at the Smithsonian. 
+                The following 50 items span 11 different museums and collections at the Smithsonian. 
+                Through the objects we get a sense of the breadth of various collecitons, and an appreciation for the objects, fossils, animals, marine life, and artifacts.
+                The objects below span thousands of years BCE, to the current day. Using the Smithsonian's <a href="https://www.si.edu/openaccess" id="link">Open Access Portal </a>, we work through the various collections. Enjoy!
+                </br></br></br></br></p> 
+              <div class="vid">
+                  <video width="320" height="240" autoplay loop>
+                      <source src="video/eye_gan.mp4" type=video/mp4>
+                    </video>
+              </div>
             </div>
             <div class="col">
             </div>
@@ -193,109 +67,92 @@
           <!-- This div just helps to center the images -->
           <div style="text-align:center; height:100%; width:100%; overflow:hidden">
             <!-- Individual Images -->
-            <img src="Global_Innovation_landscape.svg" alt="imgV1" width ="100%" id="imgV1" style="opacity:0">
-            <img src="Zurich_left.png" alt="mapV1" width ="100%" id="mapV1" style="opacity:0">
-            <img src="Global_Trademarks_landscape.svg" alt="imgV2" width ="100%" id="imgV2" style="opacity:0">
-            <img src="Shenzhen_left.png" alt="mapV2" width ="100%" id="mapV2" style="opacity:0">
-            <img src="Global_Patents_landscape.svg" alt="imgV3" width ="100%" id="imgV3" style="opacity:0">
-            <img src="China_patents.png" alt="mapV3" width ="100%" id="mapV3" style="opacity:0">
-            <img src="Global_Creativity_Index_landscape.svg" alt="imgV4" width ="100%" id="imgV4" style="opacity:0">
-            <img src="Australia_creativity.png" alt="mapV4" width ="100%" id="mapV4" style="opacity:0">
-            <img src="Global_Entrepreneurship_Index_landscape.svg" alt="imgV5" width ="100%" id="imgV5" style="opacity:0">
-            <img src="United_States_Entrepreneurship.png" alt="mapV5" width ="100%" id="mapV5" style="opacity:0">
+            <img src="Asset133.png" alt="imgV1" width ="55%" id="imgV1" style="opacity:0">
+            <img src="Asset134.png" alt="imgV2" width ="55%" id="imgV2" style="opacity:0">
+            <img src="Asset135.png" alt="imgV3" width ="55%" id="imgV3" style="opacity:0">
+            <img src="Asset136.png" alt="imgV4" width ="55%" id="imgV4" style="opacity:0">
+            <img src="Asset137.png" alt="imgV5" width ="55%" id="imgV5" style="opacity:0">
+            <img src="Asset138.png" alt="imgV6" width ="55%" id="imgV6" style="opacity:0">
+            <img src="Asset139.png" alt="imgV7" width ="55%" id="imgV7" style="opacity:0">
+            <img src="Asset140.png" alt="imgV8" width ="55%" id="imgV8" style="opacity:0">
+            <img src="Asset141.png" alt="imgV9" width ="55%" id="imgV9" style="opacity:0">
+            <img src="Asset142.png" alt="imgV10" width ="55%" id="imgV10" style="opacity:0">
+            <img src="Asset143.png" alt="imgV11" width ="55%" id="imgV11" style="opacity:0">
+            <img src="Asset144.png" alt="imgV12" width ="55%" id="imgV12" style="opacity:0">
           </div>
         </figure>
 
-        <!-- Each div is a point related to different stats from each country -->
+        <!-- Each div is a cropped eye from the object -->
         <article>
 
-          <!-- Message #1 -->
+          <!-- Cropped Eye #1 -->
           <div class="step" data-scrollama-index="0">
-            <p><strong>Switzerland</strong> takes the lead for the most innovative country. 
-            <br><br>The Global Innovation Index is an annual ranking of 126 countries, representing over 90% of the 
-            world’s population and over 96% of the world’s GDP. As a key driver in competitive economic growth, innovation
-            remains to be one of the most consistent indicators. Emerging trends to measure aspects of the Fourth Industrial 
-            Revolution (4IR), include but are not limited to the five input pillars. Five input pillars capture elements of 
-            the national economy that enable innovative activities: (1) Institutions, (2) Human capital and research, (3) 
-            Infrastructure, (4) Market sophistication, and (5) Business sophistication. Two output pillars capture actual 
-            evidence of innovation outputs: (6) Knowledge and technology outputs and (7) Creative outputs.
-          </p>
+            <img src="cropped_images/fsg_F1909.864.png" alt="eye" width ="50%" style="opacity:75">
           </div>
           
-          <!-- Message #2 -->
+          <!-- Cropped Eye #2 -->
           <div class="step" data-scrollama-index="1">
-            <p><a href="https://ethz.ch/en.html" id="redlink">ETH Zurich</a> is at the center of innovation in Switzerland. <br><br> 
-            ETH holds a number of novel patents within Robotics and Architecture, biosystems science, material science, and health 
-            sciences. Recently researchers developed a  <a href="https://ethz.ch/en/news-and-events/eth-news/news/2020/05/lighting-the-path-for-cells.html" id="redlink"> novel way </a> to use light for creating a path for molecules to follow. </p>
+            <img src="cropped_images/SAAM-1929.8.618.3_1.png" alt="eye" width ="50%" style="opacity:75">
           </div>
 
-          <!-- Message #3 -->
-          <div class="step" data-scrollama-index="2">
-            <p> <strong>China</strong> leads the world in Trademarks.<br></br> Global trademarks measure a company or individual’s 
-            unique product or service, in order to differentiate it from others in the marketplace. As a form or intellectual property 
-            it can have impact on a brand’s value. The total number of trademark filings submitting in 2017 was over 12,387,600 an 
-            increase of 26.8% from the prior year in 2016, which produced 9,771,400. <br></br> </p>
-          </div>
+          <!-- Cropped Eye #3 -->
+            <div class="step" data-scrollama-index="2">
+                <img src="cropped_images/NMNH-USNMENT00258443_Pangonia_melanopa_ht_face_lateral_screen.png" alt="eye" width ="50%" style="opacity:75">
+            </div>
 
-          <!-- Message #4 -->
+          <!-- Cropped Eye #4 -->
           <div class="step" data-scrollama-index="3">
-            <p>China is leading the rise in trademark applications since the early 2000s. Asia consisted of 66.6% of applications in 2017; 
-            Europe at 17.7%; North America at 6.4%; Latin America and the Caribbean 5.8%; Africa 2.0%; and Oceana 1.5% French brand L’OREAL 
-            led 2017 with 198 applications for new products and service marks. </p>
+            <img src="cropped_images/FS-7729_16_screen.png" alt="eye" width ="50%" style="opacity:75">
           </div>
 
-          <!-- Message #5 -->
+          <!-- Cropped Eye #5 -->
           <div class="step" data-scrollama-index="4">
-            <p><strong>China</strong> leads the world in Patents filed.<br></br>Total patents in 2017 remained constant at almost 3.2 million. 
-            Asia filed 65.1% of those patents. Two Chinese technology companies were the top filers of international patent applications in 2017 
-            (based on published applications). Huawei was ranked in first place with 4,024 patents and ZTE in second with 2,965. They were followed 
-            by Intel of the U.S., Mitsubishi Electric of Japan and Qualcomm of the U.S.  
-            </p>
+            <img src="cropped_images/SAAM-1929.8.345_1_screen.png" alt="eye" width ="50%" style="opacity:75">
           </div>
 
-          <!-- Message #6 -->
+          <!-- Cropped Eye #6 -->
           <div class="step" data-scrollama-index="5">
-            <p>Applicants from China and the Republic of Korea filed most intensively for patents related to digital communication, while for those 
-            from Germany, the top technology field was transport, for applicants from Japan it was electrical machinery, and from the U.S. it was computer 
-            technology.</p>
+              <img src="cropped_images/FS-8423_17_screen.png" alt="eye" width ="50%" style="opacity:75">
           </div>
+           
 
-          <!-- Message #7 -->
+          <!-- Cropped Eye #7 -->
           <div class="step" data-scrollama-index="6">
-            <p><strong>Australia</strong> leads the world in creativity.<br></br> The GCI is a broad-based measure for advanced economic growth and sustainable 
-            prosperity based on the 3Ts of economic development—talent, technology, and tolerance. It rates and ranks 139 nations worldwide on each of these 
-            dimensions and on our overall measure of creativity and prosperity. <br></br> Overall Ranking: Australia takes the number one ranking on the GCI, 
-            supplanting Sweden, which took top spot in the previous 2004 and 2011 editions. The United States is second (maintaining its previous ranking). 
-            New Zealand is third, Canada fourth (up three spots from its previous ranking), with Denmark and Finland tied for fifth. The rest of the top ten 
-            includes Sweden in seventh, Iceland eighth, Singapore ninth, and the Netherlands tenth. The index looks at 12 main pillars in understanding the 
-            measures driving innovation and economic growth across the world.</p>
+              <img src="cropped_images/NMAAHC-2013_239_14_001_screen.png" alt="eye" width ="50%" style="opacity:75">
           </div>
-
-          <!-- Message #8 -->
+         
+          <!-- Cropped Eye #8 -->
           <div class="step" data-scrollama-index="7">
-            <p>Australia leads the way in creativity. 98% of Australians engage with the arts according to a survey conducted by the <a href="https://www.australiacouncil.gov.au/research/" id="redlink"> Australian Council. </a><br><br></p>
+              <img src="cropped_images/SAAM-1983.31.23_1_screen.png" alt="eye" width ="50%" style="opacity:75">
           </div>
 
-          <!-- Message #9 -->
+          <!-- Cropped Eye #9 -->
           <div class="step" data-scrollama-index="8">
-            <p><strong> The United States </strong>remains one of the greatest places for entrepreneurship. <br><br>The 2017 Global Entrepreneurship Index (GEI) provides key 
-            information for policymakers and government leaders worldwide to strengthen their digital ecosystems and promote high-growth, high-impact entrepreneurship. 
-            The authors estimate that improving conditions to help entrepreneurs create new companies could add $22 trillion to the global economy.</p>
+              <img src="cropped_images/SIA-SIA_000095_B44A_F02_008_screen.png" alt="eye" width ="50%" style="opacity:75">
           </div>
 
-          <!-- Message #10 -->
+          <!-- Cropped Eye #10 -->
           <div class="step" data-scrollama-index="9">
-            <p>Silicon Valley represents one the great places for startups and investment activity. <br><br> There is much debate about how long it will hold its position
-              as China and other coutries emerge in the race to out innovate the United States.</p>
+              <img src="cropped_images/nmnhinvertebratezoology_14917695.png" alt="eye" width ="50%" style="opacity:75">
           </div>
 
+          <!-- Cropped Eye #11 -->
+          <div class="step" data-scrollama-index="10">
+              <img src="cropped_images/SAAM-1992.66.2_1_screen.png" alt="eye" width ="50%" style="opacity:75">
+           </div>
+
+          <!-- Cropped Eye #12 -->
+           <div class="step" data-scrollama-index="11">
+              <img src="cropped_images/SAAM-1999.27.77_1_screen.png" alt="eye" width ="50%" style="opacity:75">
+           </div>
+  
         </article>
 
       </section>
 
       <section id="outro">
-        <!-- <p style="text-align : center"></br><a href="#top">Start Again</a></p> -->
-        <!-- <p style="text-align : center"></br><a href="https://www.mergingfutures.com" target="blank">Learn more about Merging Futures here</a></p> -->
+        <p style="text-align : center"></br><a href="#top">To The Top</a></p>
+
       </section>
     
     </main>
@@ -316,15 +173,19 @@
     var steps = scrollySection.selectAll('.step');
 
     var imgV1 = d3.select('#imgV1');
-    var mapV1 = d3.select('#mapV1');
     var imgV2 = d3.select('#imgV2');
-    var mapV2 = d3.select('#mapV2');
     var imgV3 = d3.select('#imgV3');
-    var mapV3 = d3.select('#mapV3');
-    var imgV4 = d3.select('#imgV4');
-    var mapV4 = d3.select('#mapV4');
+    var imgV4= d3.select('#imgV4');
     var imgV5 = d3.select('#imgV5');
-    var mapV5 = d3.select('#mapV5');
+    var imgV6 = d3.select('#imgV6');
+    var imgV7 = d3.select('#imgV7');
+    var imgV8 = d3.select('#imgV8');
+    var imgV9 = d3.select('#imgV9');
+    var imgV10 = d3.select('#imgV10');
+    var imgV11 = d3.select('#imgV11');
+    var imgV12 = d3.select('#imgV12');
+    
+  
   
 
     // Create a scrollama object.
@@ -338,7 +199,7 @@
     // generic window resize listener event
     function handleResize() {
       
-      console.log("handling resize")
+      // console.log("handling resize")
       // 1. update height of step elements
       steps.style('height', stepH + 'px');
 
@@ -359,141 +220,193 @@
         case 0:
           // Set image to first version
           imgV1.style("opacity", "1")
-          mapV1.style("opacity", "0")
           imgV2.style("opacity", "0")
-          mapV2.style("opacity", "0")
           imgV3.style("opacity", "0")
-          mapV3.style("opacity", "0")
           imgV4.style("opacity", "0")
-          mapV4.style("opacity", "0")
           imgV5.style("opacity", "0")
-          mapV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
           break;
 
         case 1:
           // Set image to second version
           imgV1.style("opacity", "0")
-          mapV1.style("opacity", "1")
-          imgV2.style("opacity", "0")
-          mapV2.style("opacity", "0")
+          imgV2.style("opacity", "1")
           imgV3.style("opacity", "0")
-          mapV3.style("opacity", "0")
           imgV4.style("opacity", "0")
-          mapV4.style("opacity", "0")
           imgV5.style("opacity", "0")
-          mapV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
           break;
 
         case 2:
           // Set image to third version
           imgV1.style("opacity", "0")
-          mapV1.style("opacity", "0")
-          imgV2.style("opacity", "1")
-          mapV2.style("opacity", "0")
-          imgV3.style("opacity", "0")
-          mapV3.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "1")
           imgV4.style("opacity", "0")
-          mapV4.style("opacity", "0")
           imgV5.style("opacity", "0")
-          mapV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
           break;
 
           case 3:
           // Set image to 4th version
           imgV1.style("opacity", "0")
-          mapV1.style("opacity", "0")
           imgV2.style("opacity", "0")
-          mapV2.style("opacity", "1")
           imgV3.style("opacity", "0")
-          mapV3.style("opacity", "0")
-          imgV4.style("opacity", "0")
-          mapV4.style("opacity", "0")
+          imgV4.style("opacity", "1")
           imgV5.style("opacity", "0")
-          mapV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
           break;
 
           case 4:
           // Set image to 5th version
           imgV1.style("opacity", "0")
-          mapV1.style("opacity", "0")
           imgV2.style("opacity", "0")
-          mapV2.style("opacity", "0")
-          imgV3.style("opacity", "1")
-          mapV3.style("opacity", "0")
+          imgV3.style("opacity", "0")
           imgV4.style("opacity", "0")
-          mapV4.style("opacity", "0")
-          imgV5.style("opacity", "0")
-          mapV5.style("opacity", "0")
+          imgV5.style("opacity", "1")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
           break;
 
           case 5:
           // Set image to 6th version
           imgV1.style("opacity", "0")
-          mapV1.style("opacity", "0")
           imgV2.style("opacity", "0")
-          mapV2.style("opacity", "0")
           imgV3.style("opacity", "0")
-          mapV3.style("opacity", "1")
           imgV4.style("opacity", "0")
-          mapV4.style("opacity", "0")
           imgV5.style("opacity", "0")
-          mapV5.style("opacity", "0")
+          imgV6.style("opacity", "1")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
           break;
 
           case 6:
           // Set image to 7th version
           imgV1.style("opacity", "0")
-          mapV1.style("opacity", "0")
           imgV2.style("opacity", "0")
-          mapV2.style("opacity", "0")
           imgV3.style("opacity", "0")
-          mapV3.style("opacity", "0")
-          imgV4.style("opacity", "1")
-          mapV4.style("opacity", "0")
+          imgV4.style("opacity", "0")
           imgV5.style("opacity", "0")
-          mapV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "1")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
           break;
 
           case 7:
           // Set image to 8th version
           imgV1.style("opacity", "0")
-          mapV1.style("opacity", "0")
           imgV2.style("opacity", "0")
-          mapV2.style("opacity", "0")
           imgV3.style("opacity", "0")
-          mapV3.style("opacity", "0")
           imgV4.style("opacity", "0")
-          mapV4.style("opacity", "1")
           imgV5.style("opacity", "0")
-          mapV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "1")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
           break;
 
           case 8:
           // Set image to 9th version
           imgV1.style("opacity", "0")
-          mapV1.style("opacity", "0")
           imgV2.style("opacity", "0")
-          mapV2.style("opacity", "0")
           imgV3.style("opacity", "0")
-          mapV3.style("opacity", "0")
           imgV4.style("opacity", "0")
-          mapV4.style("opacity", "0")
-          imgV5.style("opacity", "1")
-          mapV5.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "1")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
           break;
 
           case 9:
           // Set image to 10th version
           imgV1.style("opacity", "0")
-          mapV1.style("opacity", "0")
           imgV2.style("opacity", "0")
-          mapV2.style("opacity", "0")
           imgV3.style("opacity", "0")
-          mapV3.style("opacity", "0")
           imgV4.style("opacity", "0")
-          mapV4.style("opacity", "0")
           imgV5.style("opacity", "0")
-          mapV5.style("opacity", "1")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "1")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          break;
+
+          case 10:
+          // Set image to 11th version
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "1")
+          imgV12.style("opacity", "0")
+          break;
+
+          case 11:
+          // Set image to 12th version
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "1")
           break;
 
         default:

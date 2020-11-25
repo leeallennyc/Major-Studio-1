@@ -25,7 +25,7 @@ The GitHub Repo and README.md is [HERE](https://github.com/leeallennyc/Major-Stu
 An interactive sketch is [HERE](https://xd.adobe.com/view/3d235312-357d-45a6-b08f-6d6a5864ec04-6870/?fullscreen)
 
 ---
-### [Project 3 - Interactive Visualization](https://leeallennyc.github.io/Major-Studio-1/Project03/)
+### [Project 3 - Interactive Visualization](https://leeallennyc.github.io/Major-Studio-1/Final/)
 ---
 ### Summary:
 For this interactive visualization project we are looking at the [Smithsonian's archive](https://www.si.edu/openaccess) and [API](http://edan.si.edu/openaccess/apidocs/) through [Open Access Collections](https://collections.si.edu/search/).
@@ -34,5 +34,5 @@ The purpose of the project is to create an interactive visualization from data c
 
 I've chosen to look across various collections at the Smithsonian to better understand the "Eyes of the Smithsonian". 
 
-The GitHub Repo and README.md is [HERE](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/docs/Project03)
+The GitHub Repo and README.md is [HERE](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/docs/Final)
 
