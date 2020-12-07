@@ -1,5 +1,5 @@
 body  {
-background-color: black;
+background-color: white;
 }
 /* smooth creates a rewind / speed up effect when jumping between sections of the page */
 html {
@@ -11,9 +11,14 @@ background-color: black;
 }
 
 h4 {
-font-family: Georgia, 'Times New Roman', Times, serif;
+font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+font-size: 20px; 
+font-style: normal; 
+font-variant: normal; 
+font-weight: 100; 
+line-height: 20px;
 color: red;
-opacity: .8;
+opacity: .6;
 }
 
 .vid{
@@ -28,11 +33,11 @@ margin-bottom: 100px;
 transform: translate3d(0, 0, 0); 
 }
 
-#scrollytelling {
+#scrollytelling1 {
 /* 'position:relative' allows the scrollytelling section to be positioned in a custom way */
 position: relative;
 /* OPTIONAL: you can choose any background color */
-background-color: black; 
+background-color: white; 
 /* OPTIONAL: padding is used to create space between on the edges of the story*/
 padding: 1rem;
 }
@@ -42,11 +47,11 @@ article {
 /* 'position:relative' allows the article section to be positioned in a custom way */
 position: relative;
 /* 'max-width' sets how wide each step's the text comes up on the screen */
-max-width: 80rem;
+/* max-width: 80rem; */
 /* 'OPTIONAL: margin-top' sets how much space there is between the the figure and the first message.*/
 margin-top: 0;
 /* 'margin-left:auto' and 'margin-right:auto' centers the article on the page.*/
-margin-left: 35rem;
+margin-left: auto;
 margin-right: auto;
 /* 'transform' is included to ensure z-index works properly on all kinds of devices */
 -webkit-transform: translate3d(0, 0, 0);
@@ -58,6 +63,7 @@ figure {
 /* 'sticky' is responsible for keeping the figure centered in the page as the user scrolls */
 position: -webkit-sticky;
 position: sticky;
+
 /* 'left' is required for 'position:sticky' to function */
 left: 0;
 /* 'width:100%' and 'margin:0' forces the figure to take up the maximum space. This helps with image sizing and centering*/
@@ -72,23 +78,50 @@ transform: translate3d(0, 0, 0);
 /* OPTIONAL: you can choose any background color */
 background-color: white;
 }
+/* 
+#imgV1 {
+    opacity: 0.00;
+    cursor: pointer;
+    -webkit-transition: 0.25s all ease-in-out;
+        -moz-transition: 0.25s all ease-in-out;
+        -o-transition: 0.25s all ease-in-out;
+        transition: 0.25s all ease-in-out;
+    }
+
+#imgV1:active{
+    opacity: .5s;
+} */
+
+.cropped {
+    opacity: 0.00;
+    cursor: pointer;
+    -webkit-transition: 1.25s all ease-in-out;
+        -moz-transition: 1.25s all ease-in-out;
+        -o-transition: 1.25s all ease-in-out;
+        transition: 1.25s all ease-in-out;
+    }
+
+.cropped:active{
+    opacity: .5s;
+    }
+
 
 figure img {
 /* position:absolute allows us to place the images on top of one another, which allows for smooth transitioning*/
 position: absolute;
 left: 0;
 /* ease-out transition creates a smooth change for the image from completely see-through, to fully visible. */
--webkit-transition: opacity 0.5s ease-out;
--moz-transition: opacity 0.5s ease-out;
--o-transition: opacity 0.5s ease-out;
-transition: opacity 0.5s ease-out;
+-webkit-transition: opacity 2.0s ease-in-out;
+-moz-transition: opacity 2.0s ease-in-out;
+-o-transition: opacity 2.0s ease-in-out;
+transition: opacity 2.0s ease-in-out;
 }
 
 .step {
 /* 'position relative' allows the steps to positioned in a custom way*/
 position: relative;
 /* margins are set to position step as high as possible, centered, and with a minimum bottom margin*/
-margin-left: 35rem;
+margin-left:70%;
 }
 
 .step.last-child {
@@ -118,7 +151,12 @@ opacity: 0.80;
 }
 
 #mainTitle {
-font-family: Georgia, 'Times New Roman', Times, serif;
+font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+font-size: 30px; 
+font-style: normal; 
+font-variant: normal; 
+font-weight: 200; 
+line-height: 40px;
 color: red;
 opacity: .80;
 }
@@ -128,16 +166,36 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 color: lightgray;
 opacity: .80;
 }
-
+/* 
 #redlink{
 font-family: Georgia, 'Times New Roman', Times, serif;
 color:red;
 opacity: .80;
-}
+} */
+
 
 
 #mainText {
-font-family: Georgia, 'Times New Roman', Times, serif;
-color: gray;
-opacity: .80;
+    font-family: Georgia, "Trebuchet MS", Arial, sans-serif; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 200; 
+    line-height: 30px;
+    color: gray;
+    opacity: .80;
 }
+
+/* .fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+} */
