@@ -152,10 +152,10 @@ opacity: 0.80;
 
 #mainTitle {
 font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
-font-size: 30px; 
+font-size: 2rem; 
 font-style: normal; 
 font-variant: normal; 
-font-weight: 200; 
+font-weight: 150px; 
 line-height: 40px;
 color: red;
 opacity: .80;
