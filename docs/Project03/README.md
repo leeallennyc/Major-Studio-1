@@ -1,206 +1,71 @@
 # Parsons Data Visualization MS 
 ## Major-Studio-1-fall-2020
 
-### Project 2 - Qualitative
+### Project 3 - Interactive
 
 ---
 ### Summary:
-For this qualitative visualization project we are looking at the [Smithsonian's archive](https://www.si.edu/openaccess) and [API](http://edan.si.edu/openaccess/apidocs/) through [Open Access Collections](https://collections.si.edu/search/).
+For this interactive visualization project we are looking at the [Smithsonian's archive](https://www.si.edu/openaccess) and [API](http://edan.si.edu/openaccess/apidocs/) through [Open Access Collections](https://collections.si.edu/search/).
 
-* The purpose of the project is to qualitatively represent data using information from the Smithsonian.
+* The purpose of this project is to build on [Project 1](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/docs/Project01) and [Project 2](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/docs/Project02), and create an interactive visualization based on data from the Smithsonian API. 
 ---
-### Sketches:
+### Evolution of Process:
 ---
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/master/Project02/sketches/Eyes_of_The_Smithsonian_sketch02.jpg" width=75% height=75%>
+* Project 1 -- Quantitative Inspirational Work
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project01/Representing_Eye_Color.png" width=75% height=75%>
 
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/master/Project02/sketches/Patents_sketch02.jpg" width=75% height=75%>
-
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/master/Project02/sketches/Phyllis_Diller_sketch02.jpg" width=75% height=75%>
-
----
-### Second Round Sketch:
----
-* After feedback from the previous week, I decided to move forward with "THE EYES OF THE SMITHSONIAN" idea, and continued sketching. Below is the idea that I've been developing. The idea is to be able to search different collections at the Smithsonian through the eyes of the artwork. Color is a way of clustering, and the idea is to be able to click on a type of eye color using the concentric/ringed circle on the upper left as a way of filtering. This would be used in combination with a traditional type search feature on the upper right. When an eye is clicked it brings up the artwork and some of the metadata about object on the left, with a larger eye image outlined by the eye color next to the object.   
-
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/master/Project02/sketches/Major_Studio_Project2_sketch.png" width=75% height=75%>
-
-* First, I decided to look at the National Portrait Gallery for images of Native Americans and used the search terms below to prepare the JSON file:
-
-```js
-const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
-// our search term
-const search =  `native american AND unit_code:"NPG" AND online_media_type:"Images" `;
-// url we'll use to make our call
-const url = `${searchBaseURL}?api_key=${API_KEY}&q=${search}`
-```
-* This returned approximately 200 object, and I worked through many of them manually to find the images and portraits with color and a distinct aesthetic to cluster the grouping. I chose to return the images from the thumbnail view and screen sizes view only, as my code continuously failed at returned in the largest TIFF sized images.  
-
-Sample of our JSON return:
-
-```js
-[
- {
-    "objectID": "edanmdm-npg_NPG.99.167.40",
-    "title": "A-na-cam-e-gish-ca",
-    "artist": "Unidentified Artist",
-    "date": "1830s",
-    "screenjpg": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_40Anacamegishca-000002_screen",
-    "thumbnailjpg": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_40Anacamegishca-000002_thumb",
-    "identifier": "NPG.99.167.40",
-    "filename": "NPG-NPG_99_167_40Anacamegishca-000002.jpg"
-  },
-  {
-    "objectID": "edanmdm-npg_NPG.99.167.41",
-    "title": "Wa-bish-kee-pe-nas - The White Pigeon",
-    "artist": "Unidentified Artist",
-    "date": "1830s",
-    "screenjpg": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_41Wabishkeepenas-000001_screen",
-    "thumbnailjpg": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_41Wabishkeepenas-000001_thumb",
-    "identifier": "NPG.99.167.41",
-    "filename": "NPG-NPG_99_167_41Wabishkeepenas-000001.jpg"
-  },
-  {
-    "objectID": "edanmdm-npg_NPG.99.167.44",
-    "title": "Lap-pa-win-soe",
-    "artist": "J. T. Bowen Lithography Company, active 1834 - 1844?",
-    "date": "1830s",
-    "screenjpg": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_44Lappawinsoe-000001_screen",
-    "thumbnailjpg": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_44Lappawinsoe-000001_thumb",
-    "identifier": "NPG.99.167.44",
-    "filename": "NPG-NPG_99_167_44Lappawinsoe-000001.jpg"
-  },
-  {
-    "objectID": "edanmdm-npg_NPG.99.167.45",
-    "title": "Tish-co-han",
-    "artist": "J. T. Bowen Lithography Company, active 1834 - 1844?",
-    "date": "1830s",
-    "screenjpg": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_45Tishcohan-000001_screen",
-    "thumbnailjpg": "https://ids.si.edu/ids/download?id=NPG-NPG_99_167_45Tishcohan-000001_thumb",
-    "identifier": "NPG.99.167.45",
-    "filename": "NPG-NPG_99_167_45Tishcohan-000001.jpg"
-  }
-]
-```
-### Additional Coding:
-
-* I had set up an additional branch called `gh-pages` which currently has all the downloaded images and titles on a single page.
-
-Code Sketch to get all the images on a single page:
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/master/Project02/sketches/GH_Pages_Image_Uploads.png" width=75% height=75%>
-
-More work to come around using facial recognition and [RunwayML](https://runwayml.com/)
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/Project02/facial_recognition/runway_ml.png" width=75% height=75%>
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/Project02/facial_recognition/fr_1.png" width=75% height=75%>
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project02/process_documentation/native_american_collections.png" width=75% height=75%>
-
-### Moving Away from Face Recognition and Machine Learning:
-* I moved away from the machine learning tasks in Runway ML and began to dive deeper into other collections at the Smithsonian. Using the node scripts from [week 6](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/week6/lab06_images/node_image_download) - I created approximately 11 variations to target specific collections across the entire Smithsonian ecosystem. I stored these all in JSON files, and manually created a [folder](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/week6/lab06_images/node_image_download/downloads_screen_all) and Custom JSON [file](https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project02/data_eyes.json). 
-
-### Cropping images and creating a new Design Flow:
-* After curating across hundreds of images, and dealing with the numerous API issues of missing images or returning the wrong sized image, I began the cropping process to find the "eyes" in these images. I chose to work on 50 images and hand-cropped these: [Here](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/docs/Project02/images_cropped). 
-
-### Uploading the images using D3 and the custom JSON file:
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project02/process_documentation/collections_page.png" width=75% height=75%>
-
-* Here, I used D3 and the custom JSON file to load all the images and text using the following code:
-
-```js
-
-// load JSON using d3.json
-d3.json('./data_eyes.json')
-  .then( json => {
-      displayImages(json);
-      displayfullImages(json);
-  }); 
-
-function displayImages(json){
-    let app = d3.select('#app').text('');
-
-    // date ascending
-    let data = json.sort( (a,b) => (a.date > b.date) ? 1 : -1 );
-
-    // define "cards" for each item
-    let card = app.selectAll('div.smithsonian-card')
-                .data(data)
-                .join('div')
-                .attr('class', 'smithsonian-card');
-
-    // create a div with a class of "image"
-    // and populate it with an <img/> tag
-    // that contains our filepath
-    card.append('div')
-        .attr('class', 'image')
-        .append('img')
-        .attr('src', d => {
-            // all our images are in the "images"
-            // folder which we will need to 
-            // add to our filename first
-            return './images_cropped/' + d.filename
-        });
-
-    // create a paragraph that will
-    // hold the object date
-    card.append('p')
-        .attr('class', 'object-date')
-        .text(d=>d.date);
-        
-    // create a heading tag
-    // that will be the object title
-    card.append('h2')
-    .attr('class', 'title')
-    .text(d=>d.title);
-}
-
-function displayfullImages(json){
-    // select a <div> with an id of "div.full_image_container"
-    // this is where we want all of our
-    // images to be added
-    let svg = d3.selectAll('div.full_image_container').text('');
-
-    // define "cards" for each item
-    let imageContainer = svg.selectAll('div.full_image_container')
-                .data(data)
-                .join('div')
-                .attr('class', 'full_image_container');
-
-    // create a div with a class of "image"
-    // and populate it with an <img/> tag
-    // that contains our filepath
-    svg.append('div')
-        .attr('class', 'image')
-        .append('img')
-        .attr('src', d => {
-            // all our images are in the "images"
-            // folder which we will need to 
-            // add to our filename first
-            return './images_screensized/' + d.filename
-        });
-
-    // create a paragraph that will
-    // hold the object date
-    svg.append('p')
-        .attr('class', 'object-date')
-        .text(d=>d.date);
-        
-    // create a heading tag
-    // that will be the object title
-    svg.append('h2')
-    .attr('class', 'title')
-    .text(d=>d.title);
-}
-```
-### Step back and Redesigning the Flow to prepare for a custom design layout:
-* After uploading the images, I then decided to redesign the flow to better understand how one would navigate through the images. I began working in illustrator, and after several attempts came up with the following sketch:
-
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project02/process_documentation/image%20board_setup.png" width=75% height=75%>
-
-* The current flow used allows for ~17 of the 50 cropped eye images to be explored, using Adobe XD to connect the flows:
+* Project 2 -- Qualitative Mockup and Prototype - [Link here](https://xd.adobe.com/view/3d235312-357d-45a6-b08f-6d6a5864ec04-6870/?fullscreen)
 <img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project02/process_documentation/Connecting_the_dots.png" width=75% height=75%>
 
-* A sketch of a macro level timeline is also here, which will allow the viewer to explore across various collections and time: 
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project02/process_documentation/timeline_sample_across_collections.png" width=75% height=75%>
+* Project 3 -- Interactivity / Storytelling [Link Here](https://leeallennyc.github.io/Major-Studio-1/Final/)
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project03/process_documentation/EyesOfTheSmithsonian.png" width=75% height=75%>
 
-Lastly, my goal is to create a custom layout using CSS grid, D3.js, and possibly Scrollama.js. Current iteration of the prototype can be found at this link: [Here](https://xd.adobe.com/view/3d235312-357d-45a6-b08f-6d6a5864ec04-6870/?fullscreen). 
+---
+Process work:
+* After integrating feedback from the protype in Project 2, I changed the timeline to better accommodate vertical scrolling and the flow. Using scrollama.js and D3.js for convenience of manipulating the DOM elements, I manually created ~50 images from across 9 Museums.
+
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project03/process_documentation/MS_vert_timeline.png" width=75% height=75%>
+
+* And the manual design of each of the 50 samples:
+
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project03/process_documentation/Manual_Design_flow.png" width=75% height=75%>
+
+---
+Code:
+
+* Here, I decided to use [Scrollama.js](https://github.com/russellgoldenberg/scrollama#scrollamajs) and [D3.js](https://d3js.org/) for convenience. The `index.js` [file](https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Final/index.html) is currently monolithic and needs to be refactored.  
+
+* Each step in the transition of images is created in the following way and links to the Smithsonian Archive for each image when clicked.
+```js
+<article>
+          <!-- Cropped Eye #1 -->
+          <div class="step" data-scrollama-index="0">
+            <a target= "_blank" href="https://www.si.edu/object/pseudosquilla-sp:nmnhinvertebratezoology_14917695?edan_q=nmnhinvertebratezoology_14917695&destination=/search/all&searchResults=1&id=nmnhinvertebratezoology_14917695">
+              <img src="cropped_images/croppedAsset_2018.png" width ="50%">
+            </a>
+          </div>
+          
+          <!-- Cropped Eye #2 -->
+          <div class="step" data-scrollama-index="1">
+            <a target= "_blank" href="https://www.si.edu/object/unipeltata:nmnhinvertebratezoology_13284696?edan_q=nmnhinvertebratezoology_13284696&destination=/search/all&searchResults=1&id=nmnhinvertebratezoology_13284696">
+              <img src="cropped_images/croppedAsset_2017.png" width ="50%">
+            </a>
+          </div>
+```
+---
+Future work:
+
+* I would like to incorporate a color representation and interactive timeline for future iterations.
+
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project03/process_documentation/Next_steps_1.png" width=75% height=75%>
+
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project03/process_documentation/Next_steps_2.png" width=75% height=75%>
+
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project03/process_documentation/Next_steps_3.png" width=75% height=75%>
+
+* Also, the creation of the GAN, may enable me to produce a "eye detection" algorithm for recognizing "eyes" in future artwork. This still needs to be explored and is beyond the scope of the project.
+
+ <img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project03/process_documentation/The_Eyes_of_the_Smithsonian_draft1.jpg" width=75% height=75%>
 
 
 
