@@ -1,0 +1,3414 @@
+<!-- Reworked from example from Russell GoldenBerg: https://russellgoldenberg.github.io/scrollama/sticky-overlay/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>THE EYES OF THE SMITHSONIAN</title>
+
+  <!-- <script src="docs/Final/js/app.js"></script> -->
+
+  
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Scrollama javaScript -->
+  <script src="https://unpkg.com/intersection-observer"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  
+
+</head>
+
+<body>
+    
+    <!-- Scrollama Container -->
+    <main id="top">
+
+      <!-- Scrollytelling Intro -->
+      <section id="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-8">
+              <p><br></p>
+              <h1 style="text-align:center" id="mainTitle">THE EYES OF THE SMITHSONIAN</h1>
+              <h4 style="text-align:center">A JOURNEY THROUGH SEEING</h4>
+              <p><br></p>
+              <p id="mainText">Seeing through the eyes of various collections at the Smithsonian. 
+                The following 50 items span across 9 different museums and various departments at the Smithsonian. 
+                Through the objects we get a sense of the breadth of various collections, and an appreciation for the objects, fossils, animals, marine life, and historical artifacts curated and collected over centuries.
+                The objects below span thousands of years, from the current day to 2500 BCE. Using the Smithsonian's <a target= "_blank" href="https://www.si.edu/openaccess" id="link">Open Access Portal </a>, we work through the various collections.
+                </br></br></br></br></p> 
+              <div class="vid">
+                  <video width="320" height="240" autoplay loop>
+                      <source src="video/eye_gan.mp4" type=video/mp4>
+                    </video>
+              </div>
+            </div>
+            <div class="col">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Scrollytelling Section -->
+      <section id="scrollytelling1">
+
+        <!-- Figure text -->
+        <figure>
+          <!-- This div just helps to center the images -->
+          <div style="text-align:center; height:100%; width:100%; overflow:hidden">
+            <!-- Individual Images -->
+            <img src="screen_images/Asset1.png" alt="imgV0" width ="61%" id="imgV0" style="opacity:1">
+            <img src="screen_images/Artboard_2018.png" alt="imgV1" width ="90%" id="imgV1" style="opacity:0">
+            <img src="screen_images/Artboard_2017.png" alt="imgV2" width ="90%" id="imgV2" style="opacity:0">
+            <img src="screen_images/Artboard_1998.png" alt="imgV3" width ="90%" id="imgV3" style="opacity:0">
+            <img src="screen_images/Artboard_1963_1.png" alt="imgV4" width ="61.5%" id="imgV4" style="opacity:0">
+            <img src="screen_images/Artboard_1960s.png" alt="imgV5" width ="90%" id="imgV5" style="opacity:0">
+            <img src="screen_images/Artboard_1959_3.png" alt="imgV6" width ="90%" id="imgV6" style="opacity:0">
+            <img src="screen_images/Artboard_1959_2.png" alt="imgV7" width ="90%" id="imgV7" style="opacity:0">
+            <img src="screen_images/Artboard_1959.png" alt="imgV8" width ="90%" id="imgV8" style="opacity:0">
+            <img src="screen_images/Artboard_1959_4.png" alt="imgV9" width ="90%" id="imgV9" style="opacity:0">
+            <img src="screen_images/Artboard_1952.png" alt="imgV10" width ="90%" id="imgV10" style="opacity:0">
+            <img src="screen_images/Artboard_1934.png" alt="imgV11" width ="90%" id="imgV11" style="opacity:0">
+            <img src="screen_images/Artboard_1927.png" alt="imgV12" width ="90%" id="imgV12" style="opacity:0">
+            <img src="screen_images/Artboard_1923.png" alt="imgV13" width ="90%" id="imgV13" style="opacity:0">
+            <img src="screen_images/Artboard_1920.png" alt="imgV14" width ="90%" id="imgV14" style="opacity:0">
+            <img src="screen_images/Artboard_1914.png" alt="imgV15" width ="90%" id="imgV15" style="opacity:0">
+            <img src="screen_images/Artboard_1913.png" alt="imgV16" width ="90%" id="imgV16" style="opacity:0">
+            <img src="screen_images/Artboard_1910.png" alt="imgV17" width ="90%" id="imgV17" style="opacity:0">
+            <img src="screen_images/Artboard_1896.png" alt="imgV18" width ="90%" id="imgV18" style="opacity:0">
+            <img src="screen_images/Artboard_1888_2.png" alt="imgV19" width ="90%" id="imgV19" style="opacity:0">
+            <img src="screen_images/Artboard_1888_3.png" alt="imgV20" width ="90%" id="imgV20" style="opacity:0">
+            <img src="screen_images/Artboard_1881.png" alt="imgV21" width ="90%" id="imgV21" style="opacity:0">
+            <img src="screen_images/Artboard_1880s_1.png" alt="imgV22" width ="90%" id="imgV22" style="opacity:0">
+            <img src="screen_images/Artboard_1870.png" alt="imgV23" width ="90%" id="imgV23" style="opacity:0">
+            <img src="screen_images/Artboard_1870_2.png" alt="imgV24" width ="90%" id="imgV24" style="opacity:0">
+            <img src="screen_images/Artboard_1860.png" alt="imgV25" width ="90%" id="imgV25" style="opacity:0">
+            <img src="screen_images/Artboard_1854.png" alt="imgV26" width ="90%" id="imgV26" style="opacity:0">
+            <img src="screen_images/Artboard_1851.png" alt="imgV27" width ="90%" id="imgV27" style="opacity:0">
+            <img src="screen_images/Artboard_1851_2.png" alt="imgV28" width ="90%" id="imgV28" style="opacity:0">
+            <img src="screen_images/Artboard_1850s.png" alt="imgV29" width ="90%" id="imgV29" style="opacity:0">
+            <img src="screen_images/Artboard_1850s_2.png" alt="imgV30" width ="90%" id="imgV30" style="opacity:0">
+            <img src="screen_images/Artboard_1840s.png" alt="imgV31" width ="90%" id="imgV31" style="opacity:0">
+            <img src="screen_images/Artboard_1838_1.png" alt="imgV32" width ="90%" id="imgV32" style="opacity:0">
+            <img src="screen_images/Artboard_1838_2.png" alt="imgV33" width ="90%" id="imgV33" style="opacity:0">
+            <img src="screen_images/Artboard_1830s_1.png" alt="imgV34" width ="61.75%" id="imgV34" style="opacity:0">
+            <img src="screen_images/Artboard_1824.png" alt="imgV35" width ="90%" id="imgV35" style="opacity:0">
+            <img src="screen_images/Artboard_1818.png" alt="imgV36" width ="90%" id="imgV36" style="opacity:0">
+            <img src="screen_images/Artboard_1800s_1.png" alt="imgV37" width ="90%" id="imgV37" style="opacity:0">
+            <img src="screen_images/Artboard_1800s_2.png" alt="imgV38" width ="90%" id="imgV38" style="opacity:0">
+            <img src="screen_images/Artboard_1800s_3.png" alt="imgV39" width ="90%" id="imgV39" style="opacity:0">
+            <img src="screen_images/Artboard_1800s_4.png" alt="imgV40" width ="90%" id="imgV40" style="opacity:0">
+            <img src="screen_images/Artboard_1700s.png" alt="imgV41" width ="90%" id="imgV41" style="opacity:0">
+            <img src="screen_images/Artboard_300BCE.png" alt="imgV42" width ="90%" id="imgV42" style="opacity:0">
+            <img src="screen_images/Artboard_500BCE.png" alt="imgV43" width ="90%" id="imgV43" style="opacity:0">
+            <img src="screen_images/Artboard_1050BCE.png" alt="imgV44" width ="90%" id="imgV44" style="opacity:0">
+            <img src="screen_images/Artboard_1000BCE.png" alt="imgV45" width ="90%" id="imgV45" style="opacity:0">
+            <img src="screen_images/Artboard_1550BCE.png" alt="imgV46" width ="90%" id="imgV46" style="opacity:0">
+            <img src="screen_images/Artboard_DateUnknown_1.png" alt="imgV47" width ="90%" id="imgV47" style="opacity:0">
+            <img src="screen_images/Artboard_DateUnknown_2.png" alt="imgV48" width ="90%" id="imgV48" style="opacity:0">
+            <img src="screen_images/Artboard_DateUnknown_3.png" alt="imgV49" width ="90%" id="imgV49" style="opacity:0">
+          </div>
+        </figure>
+
+        <!-- Each div is a cropped eye from the object -->
+        <article>
+
+          <!-- Cropped Eye #1 -->
+          <div class="step" data-scrollama-index="0">
+            <a target= "_blank" href="https://www.si.edu/object/pseudosquilla-sp:nmnhinvertebratezoology_14917695?edan_q=nmnhinvertebratezoology_14917695&destination=/search/all&searchResults=1&id=nmnhinvertebratezoology_14917695">
+              <img src="cropped_images/croppedAsset_2018.png" width ="50%">
+            </a>
+          </div>
+          
+          <!-- Cropped Eye #2 -->
+          <div class="step" data-scrollama-index="1">
+            <a target= "_blank" href="https://www.si.edu/object/unipeltata:nmnhinvertebratezoology_13284696?edan_q=nmnhinvertebratezoology_13284696&destination=/search/all&searchResults=1&id=nmnhinvertebratezoology_13284696">
+              <img src="cropped_images/croppedAsset_2017.png" width ="50%">
+            </a>
+          </div>
+
+          <!-- Cropped Eye #3 -->
+            <div class="step" data-scrollama-index="2">
+                <a target= "_blank" href="https://www.si.edu/object/couple-woman-wearing-sombrero-ufw-symbol:saam_1998.126.14?edan_q=SAAM-1998.126.14_1&destination=/search/collection-images&searchResults=1&id=saam_1998.126.14">
+                  <img src="cropped_images/croppedAsset_1998.png" width ="50%">
+                </a>
+            </div>
+
+          <!-- Cropped Eye #4 -->
+          <div class="step" data-scrollama-index="3">
+              <a target= "_blank" href="https://www.si.edu/object/hall-dinosaurs-and-fossil-reptiles-museum-natural-history:siris_arc_402466?edan_q=SIA-SIA_000095_B44_F13_012&destination=/search/collection-images&searchResults=1&id=siris_arc_402466">
+                <img src="cropped_images/croppedAsset_1963.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #5 -->
+          <div class="step" data-scrollama-index="4"> 
+              <a target= "_blank" href="https://www.si.edu/object/photograph-sammy-davis-jr:nmaahc_2013.118.192.2">
+                <img src="cropped_images/croppedAsset_1960s.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #6 -->
+          <div class="step" data-scrollama-index="5">
+              <a target= "_blank" href="https://www.si.edu/object/world-mammals-exhibition-hall-museum-natural-history-square-lipped-rhinoceros-habitat-group:siris_arc_402146?edan_q=SIA-SIA_000095_B44A_F03_006&destination=/search/collection-images&searchResults=1&id=siris_arc_402146">
+                <img src="cropped_images/croppedAsset_1959_3.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #7 -->
+          <div class="step" data-scrollama-index="6">
+              <a target= "_blank" href="https://www.si.edu/object/world-mammals-exhibition-hall-museum-natural-history-hippopotamus:siris_arc_402136?edan_q=SIA-SIA_000095_B44A_F02_016&destination=/search/collection-images&searchResults=1&id=siris_arc_402136">
+                <img src="cropped_images/croppedAsset_1959_2.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #8 -->
+          <div class="step" data-scrollama-index="7">
+              <a target= "_blank" href="https://www.si.edu/object/world-mammals-exhibition-hall-museum-natural-history:siris_arc_402128?edan_q=SIA-SIA_000095_B44A_F02_008&destination=/search/collection-images&searchResults=1&id=siris_arc_402128">
+                <img src="cropped_images/croppedAsset_1959.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #9 -->
+          <div class="step" data-scrollama-index="8">
+              <a target= "_blank" href="https://www.si.edu/object/world-mammals-exhibition-hall-museum-natural-history:siris_arc_402132?edan_q=SIA-SIA_000095_B44A_F02_012&destination=/search/collection-images&searchResults=1&id=siris_arc_402132">
+                <img src="cropped_images/croppedAsset_1959_4.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #10 -->
+          <div class="step" data-scrollama-index="9">
+              <a target= "_blank" href="https://www.si.edu/object/chrysops-indiana-thailandensis:nmnhentomology_9150672?edan_q=NMNH-USNMENT00258429&destination=/search/all&searchResults=1&id=nmnhentomology_9150672">
+                <img src="cropped_images/croppedAsset_1952.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #11 -->
+          <div class="step" data-scrollama-index="10">
+              <a target= "_blank" href="https://www.si.edu/object/self-portrait:saam_1967.57.30?edan_q=saam-1967.57.30_1&destination=/search/collection-images&searchResults=1&id=saam_1967.57.30">
+                <img src="cropped_images/croppedAsset_1934.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #12 -->
+          <div class="step" data-scrollama-index="11">
+              <a target= "_blank" href="https://www.si.edu/object/oriental:saam_1952.13.50?edan_q=saam-1952.13.50_1&destination=/search/collection-images&searchResults=1&id=saam_1952.13.50">
+                <img src="cropped_images/croppedAsset_1927.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #13 -->
+          <div class="step" data-scrollama-index="12">
+              <a target= "_blank" href="https://www.si.edu/object/gelatin-silver-print-roland-hayes:nmaahc_2015.97.38.22.1">
+                <img src="cropped_images/croppedAsset_1923.png" width ="50%">
+              </a>
+          </div>
+          
+          <!-- Cropped Eye #14 -->
+          <div class="step" data-scrollama-index="13">
+              <a target= "_blank" href="https://www.si.edu/object/pangonia-melanopus:nmnhentomology_9145950?edan_q=NMNH-USNMENT00258443&destination=/search/all&searchResults=1&id=nmnhentomology_9145950">
+                <img src="cropped_images/croppedAsset_1920.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #15 -->
+            <div class="step" data-scrollama-index="14">
+                <a target= "_blank" href="https://www.si.edu/object/photograph-bosey-e-vick:nmaahc_2010.66.75">
+                  <img src="cropped_images/croppedAsset_1914.png" width ="50%">
+                </a>
+            </div>
+
+          <!-- Cropped Eye #16 -->
+          <div class="step" data-scrollama-index="15">
+              <a target= "_blank" href="https://www.si.edu/object/little-pink-plum:saam_1981.130?edan_q=SAAM-1981.130_1&destination=/search/collection-images&searchResults=1&id=saam_1981.130">
+                <img src="cropped_images/croppedAsset_1913.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #17 -->
+          <div class="step" data-scrollama-index="16">
+              <a target= "_blank" href="https://www.si.edu/object/sacred-calf-bazaar-agra:saam_1992.13.66?edan_q=SAAM-1992.13.66_1&destination=/search/collection-images&searchResults=1&id=saam_1992.13.66">
+                <img src="cropped_images/croppedAsset_1910.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #18 -->
+          <div class="step" data-scrollama-index="17">
+              <a target= "_blank" href="https://www.si.edu/object/napoleon-sphinx:saam_1973.130.33?edan_q=SAAM-1973.130.33_1&destination=/search/collection-images&searchResults=1&id=saam_1973.130.33">
+                <img src="cropped_images/croppedAsset_1896.png" width ="50%">
+              </a>
+          </div>
+
+        
+          <!-- Cropped Eye #19 -->
+          <div class="step" data-scrollama-index="18">
+              <a target= "_blank" href="https://www.si.edu/object/head-queen-egypt:saam_1983.31.23?edan_q=saam-1983.31.23&destination=/search/collection-images&searchResults=1&id=saam_1983.31.23">
+                <img src="cropped_images/croppedAsset_1888_2.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #20 -->
+          <div class="step" data-scrollama-index="19">
+              <a target= "_blank" href="https://www.si.edu/object/napoleon-sphinx:saam_1973.130.33?edan_q=SAAM-1973.130.33_1&destination=/search/collection-images&searchResults=1&id=saam_1973.130.33">
+                <img src="cropped_images/croppedAsset_1888_3.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #21 -->
+          <div class="step" data-scrollama-index="20">
+              <a target= "_blank" href="https://www.si.edu/object/chinese-fishmonger:saam_1972.153?edan_q=SAAM-1972.153_1&destination=/search/collection-images&searchResults=1&id=saam_1972.153">
+                <img src="cropped_images/croppedAsset_1881.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #22 -->
+          <div class="step" data-scrollama-index="21">
+              <a target= "_blank" href="https://www.si.edu/object/cabinet-card-woman:nmaahc_2011.155.76.5">
+                <img src="cropped_images/croppedAsset_1880s.png" width ="50%">
+              </a>
+           </div>
+           
+          <!-- Cropped Eye #23 -->
+           <div class="step" data-scrollama-index="22">
+              <a target= "_blank" href="https://www.si.edu/object/lithographic-print-hiram-revels:nmaahc_2013.239.14">
+                <img src="cropped_images/croppedAsset_1870.png" width ="50%">
+              </a>
+           </div>
+
+
+          <!-- Cropped Eye #24 -->
+          <div class="step" data-scrollama-index="23">
+              <a target= "_blank" href="https://www.si.edu/object/vinnie-ream:saam_1917.11.1?edan_q=SAAM-1917.11.1_1&destination=/search/all&searchResults=1&id=saam_1917.11.1">
+                <img src="cropped_images/croppedAsset_1870_2.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #25 -->
+          <div class="step" data-scrollama-index="24">
+              <a target= "_blank" href="https://www.si.edu/object/studies-cows:chndm_1939-85-87">
+                <img src="cropped_images/croppedAsset_1860s.png" width ="50%">
+              </a>
+          </div>
+           
+
+          <!-- Cropped Eye #26 -->
+          <div class="step" data-scrollama-index="25">
+              <a target= "_blank" href="https://www.si.edu/object/boy-broken-tambourine:saam_1990.27?edan_q=SAAM-1990.27_2&destination=/search/collection-images&searchResults=1&id=saam_1990.27">
+                <img src="cropped_images/croppedAsset_1854.png" width ="50%">
+              </a>
+          </div>
+         
+          <!-- Cropped Eye #27 -->
+          <div class="step" data-scrollama-index="26">
+              <a target= "_blank" href="https://www.si.edu/object/masonic-terrapin:npg_S_NPG.2001.58.22?edan_q=NPG-S-NPG_2001_58_22&destination=/search/all&searchResults=1&id=npg_S_NPG.2001.58.22">
+                <img src="cropped_images/croppedAsset_1851.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #28 -->
+          <div class="step" data-scrollama-index="27">
+              <a target= "_blank" href="https://www.si.edu/object/giraffe:npg_S_NPG.2001.58.8?edan_q=NPG-S-NPG_2001_58_8&destination=/search/all&searchResults=1&id=npg_S_NPG.2001.58.8">
+                <img src="cropped_images/croppedAsset_1851_2.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #29 -->
+          <div class="step" data-scrollama-index="28">
+              <a target= "_blank" href="https://www.si.edu/object/face-mask:nmafa_2005-6-189">
+                <img src="cropped_images/croppedAsset_1850s.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #30 -->
+          <div class="step" data-scrollama-index="29">
+              <a target= "_blank" href="https://www.si.edu/object/pendant:nmafa_85-19-5">
+                <img src="cropped_images/croppedAsset_1850s_2.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #31 -->
+           <div class="step" data-scrollama-index="30">
+              <a target= "_blank" href="https://www.si.edu/object/head-arab-girl:saam_1992.66.2?edan_q=SAAM-1992.66.2_1&destination=/search/collection-images&searchResults=1&id=saam_1992.66.2">
+                <img src="cropped_images/croppedAsset_1840s.png" width ="50%">
+              </a>
+           </div>
+
+          <!-- Cropped Eye #32 -->
+          <div class="step" data-scrollama-index="31">
+              <a target= "_blank" href="https://www.si.edu/object/qua-ta-wa-pea:npg_NPG.99.167.17?edan_q=NPG.99.167.17&destination=/search/collection-images&searchResults=1&id=npg_NPG.99.167.17">
+                <img src="cropped_images/croppedAsset_1838_1.png" width ="50%">
+              </a>
+          </div>
+          
+          <!-- Cropped Eye #33 -->
+          <div class="step" data-scrollama-index="32">
+              <a target= "_blank" href="https://www.si.edu/object/horatio-greenough:saam_1968.155.42?edan_q=saam-1968.155.42_2&destination=/search/collection-images&searchResults=1&id=saam_1968.155.42">
+                <img src="cropped_images/croppedAsset_1838_2.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #34 -->
+            <div class="step" data-scrollama-index="33">
+                <a target= "_blank" href="https://www.si.edu/object/micanopy-seminole-chief:npg_NPG.99.168.40?edan_q=NPG.99.168.40&destination=/search/collection-images&searchResults=1&id=npg_NPG.99.168.40">
+                  <img src="cropped_images/croppedAsset_1830s.png" width ="50%">
+                </a>
+            </div>
+
+          <!-- Cropped Eye #35 -->
+          <div class="step" data-scrollama-index="34">
+              <a target= "_blank" href="https://www.si.edu/object/eye-lady:saam_1929.8.313.2?edan_q=SAAM-1929.8.313.2_1&destination=/search/collection-images&searchResults=1&id=saam_1929.8.313.2">
+                <img src="cropped_images/croppedAsset_1824.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #36 -->
+          <div class="step" data-scrollama-index="35">
+              <a target= "_blank" href="https://www.si.edu/object/portrait-mendes-cohen:saam_1978.67.1?edan_q=SAAM-1978.67.1_2&destination=/search/collection-images&searchResults=1&id=saam_1978.67.1">
+                <img src="cropped_images/croppedAsset_1818.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #37 -->
+          <div class="step" data-scrollama-index="36">
+              <a target= "_blank" href="https://www.si.edu/object/ourook-mt-olympus-asia:saam_1991.56.70?edan_q=SAAM-1991.56.70_1&destination=/search/collection-images&searchResults=1&id=saam_1991.56.70">
+                <img src="cropped_images/croppedAsset_1800s.png" width ="50%">
+              </a>
+          </div>
+           
+
+          <!-- Cropped Eye #38 -->
+          <div class="step" data-scrollama-index="37">
+              <a target= "_blank" href="https://www.si.edu/object/peacock:chndm_1955-39-2">
+                <img src="cropped_images/croppedAsset_1800s_2.png" width ="50%">
+              </a>
+          </div>
+         
+          <!-- Cropped Eye #39 -->
+          <div class="step" data-scrollama-index="38">
+              <a target= "_blank" href="https://www.si.edu/object/bangle:chndm_1953-143-7">
+                <img src="cropped_images/croppedAsset_1800s_3.png" width ="50%">
+              </a>
+          </div>
+
+           <!-- Cropped Eye #40 -->
+           <div class="step" data-scrollama-index="39">
+              <a target= "_blank" href="https://www.si.edu/object/eye-miniature-elliptical-ivory-box:saam_1999.27.77">
+                <img src="cropped_images/croppedAsset_1800s_4.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #41 -->
+          <div class="step" data-scrollama-index="40">
+              <a target= "_blank" href="https://www.si.edu/object/crest-mask:nmafa_2005-6-2">
+                <img src="cropped_images/croppedAsset_1700s.png" width ="50%">
+              </a>  
+          </div>
+
+          <!-- Cropped Eye #42 -->
+          <div class="step" data-scrollama-index="41">
+            <a target= "_blank" href="https://www.si.edu/object/eye-bead-horizontal-bore:fsg_F1909.875?edan_q=fsg_F1909.875&destination=/search/collection-images&searchResults=1&id=fsg_F1909.875">
+                <img src="cropped_images/croppedAsset_300BCE.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #43 -->
+          <div class="step" data-scrollama-index="42">
+            <a target= "_blank" href="https://www.si.edu/object/mask-and-ring-handle:fsg_F1917.18">
+                <img src="cropped_images/croppedAsset_500BCE.png" width ="50%">
+              </a>
+           </div>
+           
+          <!-- Cropped Eye #44 -->
+           <div class="step" data-scrollama-index="43">
+            <a target= "_blank" href="https://www.si.edu/object/mask-form-horse-face:fsg_F1916.143">
+                <img src="cropped_images/croppedAsset_1050BCE.png" width ="50%">
+              </a>
+           </div>
+
+           <!-- Cropped Eye #45 -->
+          <div class="step" data-scrollama-index="44">
+            <a target= "_blank" href="https://www.si.edu/object/eye-bead:fsg_F1909.763?edan_q=fsg_F1909.763&destination=/search/collection-images&searchResults=1&id=fsg_F1909.763">
+                <img src="cropped_images/croppedAsset_1000BCE.png" width ="50%">
+            </a>
+          </div>
+
+          <!-- Cropped Eye #46 -->
+          <div class="step" data-scrollama-index="45">
+            <a target= "_blank" href="https://www.si.edu/object/eye-amulet:fsg_F1909.864">
+                <img src="cropped_images/croppedAsset_1550BCE.png" width ="50%">
+              </a>
+          </div>
+           
+
+          <!-- Cropped Eye #47 -->
+          <div class="step" data-scrollama-index="46">
+            <a target= "_blank" href="https://www.si.edu/object/mask:saam_1929.8.618.3?edan_q=SAAM-1929.8.618.3_1&destination=/search/collection-images&searchResults=1&id=saam_1929.8.618.3">
+                <img src="cropped_images/croppedAsset_DateUnknown_1.png" width ="50%">
+              </a>
+          </div>
+         
+          <!-- Cropped Eye #48 -->
+          <div class="step" data-scrollama-index="47">
+            <a target= "_blank" href="https://www.si.edu/object/kwan-yin-goddess-mercy:saam_1929.8.345?edan_q=SAAM-1929.8.345_1&destination=/search/collection-images&searchResults=1&id=saam_1929.8.345">
+                <img src="cropped_images/croppedAsset_DateUnknown_2.png" width ="50%">
+              </a>
+          </div>
+
+          <!-- Cropped Eye #49 -->
+          <div class="step" data-scrollama-index="48">
+            <a target= "_blank" href="https://www.si.edu/object/mask:saam_1929.8.504.2?edan_q=SAAM-1929.8.504.2_1&destination=/search/collection-images&searchResults=1&id=saam_1929.8.504.2">
+                <img src="cropped_images/croppedAsset_DateUnknown_3.png" width ="50%">
+              </a>
+          </div>
+
+           <!-- Cropped Eye #49 -->
+           <div class="step" data-scrollama-index="49">
+            <a target= "_blank" href="#top">
+                <img src="cropped_images/croppedAsset_end.png" width ="50%">
+            </a>
+        </div>
+
+  
+        </article>
+
+      </section>
+
+      <section id="outro">
+        <p style="text-align : center"></br><a href="#top">To The Top</a></p>
+
+      </section>
+    
+    </main>
+
+
+  <!-- Scrollama javaScript -->
+  <script src="https://unpkg.com/intersection-observer"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+
+  <!-- Scrollytelling JavaScript -->
+  <script>
+
+    // Save different parts of the page as D3.js objects. Using d3 for convenience
+    var main = d3.select('main')
+    var scrollySection = main.select('#scrollytelling1');
+    var figure = scrollySection.select('figure');
+    var article = scrollySection.select('article');
+    var steps = scrollySection.selectAll('.step');
+
+    var imgV0 = d3.select('#imgV0');
+    var imgV1 = d3.select('#imgV1');
+    var imgV2 = d3.select('#imgV2');
+    var imgV3 = d3.select('#imgV3');
+    var imgV4 = d3.select('#imgV4');
+    var imgV5 = d3.select('#imgV5');
+    var imgV6 = d3.select('#imgV6');
+    var imgV7 = d3.select('#imgV7');
+    var imgV8 = d3.select('#imgV8');
+    var imgV9 = d3.select('#imgV9');
+    var imgV10 = d3.select('#imgV10');
+    var imgV11 = d3.select('#imgV11');
+    var imgV12 = d3.select('#imgV12');
+    var imgV13 = d3.select('#imgV13');
+    var imgV14 = d3.select('#imgV14');
+    var imgV15 = d3.select('#imgV15');
+    var imgV16 = d3.select('#imgV16');
+    var imgV17 = d3.select('#imgV17');
+    var imgV18 = d3.select('#imgV18');
+    var imgV19 = d3.select('#imgV19');
+    var imgV20 = d3.select('#imgV20');
+    var imgV21 = d3.select('#imgV21');
+    var imgV22 = d3.select('#imgV22');
+    var imgV23 = d3.select('#imgV23');
+    var imgV24 = d3.select('#imgV24');
+    var imgV25 = d3.select('#imgV25');
+    var imgV26 = d3.select('#imgV26');
+    var imgV27 = d3.select('#imgV27');
+    var imgV28 = d3.select('#imgV28');
+    var imgV29 = d3.select('#imgV29');
+    var imgV30 = d3.select('#imgV30');
+    var imgV31 = d3.select('#imgV31');
+    var imgV32 = d3.select('#imgV32');
+    var imgV33 = d3.select('#imgV33');
+    var imgV34 = d3.select('#imgV34');
+    var imgV35 = d3.select('#imgV35');
+    var imgV36 = d3.select('#imgV36');
+    var imgV37 = d3.select('#imgV37');
+    var imgV38 = d3.select('#imgV38');
+    var imgV39 = d3.select('#imgV39');
+    var imgV40 = d3.select('#imgV40');
+    var imgV41 = d3.select('#imgV41');
+    var imgV42 = d3.select('#imgV42');
+    var imgV43 = d3.select('#imgV43');
+    var imgV44 = d3.select('#imgV44');
+    var imgV45 = d3.select('#imgV45');
+    var imgV46 = d3.select('#imgV46');
+    var imgV47 = d3.select('#imgV47');
+    var imgV48 = d3.select('#imgV48');
+    var imgV49 = d3.select('#imgV49');
+    var imgV50 = d3.select('#imgV50');
+    
+    // Create a scrollama object.
+    var myScrollama = scrollama();
+
+    // These needs to be constants to improve performance on mobile.
+    const stepH = Math.floor(window.innerHeight * 2);
+    const figureHeight = window.innerHeight * 1;
+    const figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+    // generic window resize listener event
+    function handleResize() {
+     
+      // console.log("handling resize")
+      // 1. update height of step elements
+      steps.style('height', stepH - 700 + 'px');
+    
+
+
+      figure
+        .style('height', figureHeight + 'px')
+        .style('top', figureMarginTop + 'px');
+
+      // 3. tell scrollama to update new element dimensions
+      myScrollama.resize();
+
+    }
+
+    // scrollama event handler
+    function handleStepChange(response) {
+      switch(response.index) {
+        case 0:
+          imgV0.style("opacity", "1")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+        case 1:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "1")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+        case 2:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "1")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 3:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "1")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 4:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "1")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 5:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "1")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 6:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "1")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 7:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "1")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 8:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "1")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 9:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "1")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 10:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "1")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 11:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "1")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 12:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "1")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 13:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "1")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 14:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "1")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 15:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "1")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 16:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "1")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 17:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "1")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 18:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "1")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 19:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "1")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 20:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "1")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 21:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "1")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 22:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "1")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+
+          case 23:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "1")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 24:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "1")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+
+          case 25:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "1")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 26:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "1")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 27:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "1")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 28:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "1")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 29:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "1")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 30:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "1")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 31:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "1")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 32:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "1")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 33:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "1")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 34:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "1")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 35:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "1")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 36:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "1")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          
+          case 37:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "1")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 38:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "1")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 39:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "1")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 40:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "1")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 41:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "1")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+
+          case 42:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "1")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 43:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "1")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 44:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "1")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 45:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "1")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 46:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "1")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 47:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "1")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 48:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "1")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 49:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "1")
+          imgV50.style("opacity", "0")
+          break;
+
+          case 50:
+          imgV0.style("opacity", "0")
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
+          imgV14.style("opacity", "0")
+          imgV15.style("opacity", "0")
+          imgV16.style("opacity", "0")
+          imgV17.style("opacity", "0")
+          imgV18.style("opacity", "0")
+          imgV19.style("opacity", "0")
+          imgV20.style("opacity", "0")
+          imgV21.style("opacity", "0")
+          imgV22.style("opacity", "0")
+          imgV23.style("opacity", "0")
+          imgV24.style("opacity", "0")
+          imgV25.style("opacity", "0")
+          imgV26.style("opacity", "0")
+          imgV27.style("opacity", "0")
+          imgV28.style("opacity", "0")
+          imgV29.style("opacity", "0")
+          imgV30.style("opacity", "0")
+          imgV31.style("opacity", "0")
+          imgV32.style("opacity", "0")
+          imgV33.style("opacity", "0")
+          imgV34.style("opacity", "0")
+          imgV35.style("opacity", "0")
+          imgV36.style("opacity", "0")
+          imgV37.style("opacity", "0")
+          imgV38.style("opacity", "0")
+          imgV39.style("opacity", "0")
+          imgV40.style("opacity", "0")
+          imgV41.style("opacity", "0")
+          imgV42.style("opacity", "0")
+          imgV43.style("opacity", "0")
+          imgV44.style("opacity", "0")
+          imgV45.style("opacity", "0")
+          imgV46.style("opacity", "0")
+          imgV47.style("opacity", "0")
+          imgV48.style("opacity", "0")
+          imgV49.style("opacity", "0")
+          imgV50.style("opacity", "1")
+          break;
+
+        default:
+          // do nothing
+      }
+
+      // change the class of the step divs to indicate which step is active
+      steps.classed('is-active', function (d, i) {
+        return i === response.index;
+      })
+
+    }
+
+    function init() {
+
+      imgV0.style("opacity", "1")// 0. Display first image only once the all sizes are detected
+   
+
+      // 1. force a resize on load to ensure proper dimensions are sent to scrollama
+      handleResize();
+
+      // 2. setup the scroller passing options
+      // 		this will also initialize trigger observations
+      // 3. bind scrollama event handlers (this can be chained like below)
+      myScrollama.setup({
+        step: '.step',
+        offset: figureHeight * 1.5 + "px",
+        // set to true to see debug horizontal line
+        debug: true,
+      }).onStepEnter(handleStepChange)  
+        
+
+      // setup resize event
+      window.addEventListener('resize', handleResize);
+    }
+
+    // kick things off
+    init();
+  </script>
+
+</body>
+
+</html>
