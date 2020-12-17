@@ -34,5 +34,5 @@ The purpose of the project is to create an interactive visualization from data c
 
 I've chosen to look across various collections at the Smithsonian to better understand the "Eyes of the Smithsonian". 
 
-The GitHub Repo and README.md is [HERE](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/docs/Final)
+The GitHub Repo and README.md is [HERE](https://github.com/leeallennyc/Major-Studio-1/tree/gh-pages/docs/Project03)
 

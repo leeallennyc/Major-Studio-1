@@ -18,7 +18,7 @@ For this interactive visualization project we are looking at the [Smithsonian's 
 <img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project02/process_documentation/Connecting_the_dots.png" width=75% height=75%>
 
 * Project 3 -- Interactivity / Storytelling [Link Here](https://leeallennyc.github.io/Major-Studio-1/Final/)
-<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project03/process_documentation/EyesOfTheSmithsonian.png" width=75% height=75%>
+<img src="https://github.com/leeallennyc/Major-Studio-1/blob/gh-pages/docs/Project03/process_documentation/EOS_Title.png" width=75% height=75%>
 
 ---
 Process work:
